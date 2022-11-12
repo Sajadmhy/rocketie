@@ -1,0 +1,637 @@
+@font-face {
+    font-family: 'Clash Display';
+    src: url("/fonts/ClashDisplay-Regular.woff") format('woff'),
+         url("/fonts/ClashDisplay-Regular.woff2") format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Clash Display';
+    src: url("/fonts/ClashDisplay-Bold.woff2") format('woff2');
+    font-weight: bold;
+    font-style: bold;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap');
+
+.container {
+    font-family: "Clash Display";
+}
+
+.heroBG {
+    background-image: url("/hero-bg.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: "Clash Display";
+    position: relative;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 7rem;
+    background: linear-gradient(158.2deg, #0C0D13 14.04%, #0C0D13 31.51%, rgba(12, 13, 19, 0.9) 60.08%, rgba(12, 13, 19, 0) 92.4%);
+}
+
+.nav ul {
+    display: flex;
+    color: white;
+    list-style: none;
+    gap: 3rem;
+    font-size: 13px;
+}
+
+.nav li {
+    cursor: pointer;
+}
+
+.navEnd {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.nav button {
+    color: white;
+    background-color: transparent;;
+    border: solid 1px rgb(134, 134, 134);
+    padding: 0.6rem 1.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.hero {
+    color: white;
+    padding:4rem 8rem;
+}
+.header {
+    font-size: 50px;
+    font-weight: 600;
+    width: 500px;
+    margin-bottom: 1rem;
+}
+
+.header span {
+    background-image: linear-gradient(90deg, #39BEF0, #90DEFC, #90DEFC);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.headerPara {
+    color: white;
+    width: 400px;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.headerPara span {
+    opacity: 0.7;
+}
+
+.heroBtns {
+    display: flex;
+    gap: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 12rem;
+}
+
+.hero button:first-of-type {
+    background-color: #39BEF0;
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: 13px;
+    border: none;
+}
+
+.hero button:nth-of-type(2) {
+    background-color: transparent;
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: 13px;
+    border: solid 1px white;
+}
+
+.card1 {
+    position: absolute;
+    bottom: 118px;
+    right: 265px;
+    transform: rotate(-13.42deg);
+}
+
+.card2 {
+    position: absolute;
+    bottom: 100px;
+    right: 545px;
+    transform: rotate(-13.42deg);
+}
+
+.card3 {
+    position: absolute;
+    bottom: 220px;
+    right: 40px;
+    transform: rotate(-13.42deg);
+}
+
+
+.appUp {
+    position: absolute;
+    bottom: 150px;
+    right: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ellipse {
+    /* width: 100vw; */
+    height: 150px;
+    background-image: url("/Ellipse1.png");
+    background-repeat: no-repeat;
+    background-size: 100vw;
+}
+
+/* nft section */
+
+.nftSection {
+    padding: 4rem 10rem;
+    background-image: url("/nft-bg.PNG");
+    color: white;
+    background-size: cover;
+    position: relative;
+}
+
+.nftSection h2 {
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.nftSection h2 div {
+    width: fit-content;
+    background-image: linear-gradient(90deg, #39BEF0, #90DEFC, #90DEFC);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nftCards {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 2rem;
+    height: 280px;
+}
+
+.nftCard2 {
+    align-self: flex-end;
+}
+
+.nftCard4 {
+    align-self: flex-end;
+}
+
+.nftSection h3 {
+    font-size: 12px;
+    font-weight: 600;
+    display: flex;
+    width: 120px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nftSection p {
+    color:#39BEF0;
+    font-size: 12px;
+}
+
+.nftSection button {
+    align-self: center;
+    margin-bottom: 10rem;
+    margin-left: 0.5rem;
+    color: white;
+    opacity: 0.3;
+    background-color: transparent;
+    border: solid 1px white;
+    padding: 0.7rem 0.7rem;
+    border-radius: 7px;
+}
+
+.ellipse2 {
+    position: absolute;
+    bottom: -120px;
+    right: 0;
+    width: 100%;
+    height: 150px;
+    background-image: url("/Ellipse2.png");
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    z-index: 100;
+}
+
+
+/* roadmap section */
+
+.roadmap {
+    padding: 4rem 10rem;
+    color: white;
+    position: relative;
+    background-image: url("/roadmap-big.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+.roadmap h2 {
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.roadmap p {
+    font-size: 13px;
+    color: #39BEF0;
+    font-family: 'JetBrains Mono', monospace;
+    margin-bottom: -1rem;
+}
+
+.emptyHeight {
+    height: 400px;
+}
+
+.roadmapBtns {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.roadmapBtns button:first-of-type {
+    color: white;
+    background-color: #39BEF0;
+    padding: 0.7rem 1.5rem;
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: 13px;
+    border: none;
+}
+
+.roadmapBtns button:nth-of-type(2) {
+    color: white;
+    background-color: rgba(100, 100, 100, 0.3);
+    padding: 0.7rem 1.5rem;
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: 13px;
+    border: none;
+}
+
+/* team section */
+
+.team {
+    padding: 4rem 10rem;
+    color: white;
+    position: relative;
+    background-image: url("/team-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.ellipse3 {
+    position: absolute;
+    top: -70px;
+    right: 0;
+    width: 100%;
+    height: 150px;
+    background-image: url("/Ellipse3.png");
+    background-repeat: no-repeat;
+    background-size: 100vw;
+}
+
+.team h2 {
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 2rem;
+}
+
+.team h2 span {
+    background-image: linear-gradient(90deg, #39BEF0, #90DEFC, #90DEFC);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.teamCards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+}
+
+.teamCard {
+    padding: 1rem;
+    background-color: #101219;
+    border-radius: 7px;
+    height: 160px;
+    position: relative;
+}
+
+.cardHead {
+    position: relative;
+    top: -5px;
+    background: linear-gradient(163.86deg, rgba(36, 38, 48, 0.75) -3.59%, rgba(36, 38, 48, 0) 162.71%);
+    border-radius: 7px;
+}
+
+.profilePlaceholder {
+    position: absolute;
+    background-color: #101219;
+    top: 25px;
+    left: 30px;
+    width: 78px;
+    height: 78px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    position: absolute;
+    top: 10px;
+    height: 54px;
+    width: 54px;
+    background: linear-gradient(9.93deg, #39BEF0 -51.58%, rgba(57, 190, 240, 0) 78.37%);
+    border-radius: 7px;
+}
+
+.cardText {
+    padding: 0 1rem;
+}
+
+.cardText p {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: -0.8rem;
+}
+
+.cardText h3 {
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cardText span {
+    flex-grow: 1;
+}
+
+.tags {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    display: flex;
+    margin-top: 1rem;
+}
+
+.tags p {
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.7);
+    margin-top: 2.6rem;
+}
+
+.ellipse4 {
+    position: absolute;
+    bottom: -120px;
+    right: 0;
+    width: 100%;
+    height: 150px;
+    background-image: url("/Ellipse4.png");
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    z-index: 100;
+}
+
+
+/* mint section */
+
+.mint {
+    padding: 4rem 10rem;
+    color: white;
+    position: relative;
+    background-image: url("/mint-bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.mint h2 {
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.mint p {
+    font-size: 13px;
+    color: #39BEF0;
+    font-family: 'JetBrains Mono', monospace;
+    margin-bottom: -1rem;
+    text-align: center;
+}
+
+.banner {
+    position: relative;
+    margin: 0 auto;
+    height: 405px;
+    background-color: #101219;
+    border-radius: 7px;
+    margin-bottom: 2rem;
+}
+
+.bannerPic1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 7px;
+}
+
+.bannerOverlay1 {
+    position: absolute;
+    width: 382px;
+    height: 405px;
+    background: linear-gradient(270deg, #101219 0%, rgba(16, 18, 25, 0.84) 28.01%, rgba(16, 18, 25, 0) 100%);
+    border-radius: 10px 0px 0px 10px;
+    z-index: 100;
+}
+
+
+.bannerPic2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    border-radius: 7px;
+}
+
+.bannerOverlay2 {
+    position: absolute;
+    right: 0;
+    width: 382px;
+    height: 405px;
+    background: linear-gradient(90deg, #101219 3.42%, rgba(16, 18, 25, 0.86) 31.89%, rgba(16, 18, 25, 0) 100%);
+    border-radius: 0px 10px 10px 0px;
+    z-index: 100;
+}
+
+.bannerText {
+    padding: 3rem 0;
+    color: white;
+    z-index: 200;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: center;
+}
+
+.bannerText button:first-of-type {
+    background-color: #242630;
+    padding: 0.7rem 1.5rem;
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: 13px;
+    border: none;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.bannerText button:nth-of-type(2) {
+    background-color: #39BEF0;
+    padding: 0.7rem 1.5rem;
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: 13px;
+    border: none;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.bannerText p {
+    color: white;
+    font-size: 16px;
+    font-family: "Clash Display";
+    margin: 1rem 0;
+}
+
+.bannerText p:nth-of-type(2) {
+    opacity: 0.4;
+}
+ 
+.selection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+    margin-bottom: 2rem;
+}
+
+.selection div {
+    background-color: #181B23;
+    padding: 0.8rem 1.3rem;
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: 19px;
+    border: none;
+    color: white;
+}
+
+#selected {
+    background-color: #39BEF0;
+}
+
+
+.result span {
+    opacity: 0.4;
+}
+
+/* footer section */
+
+.footer {
+    font-family: "Clash Display";
+    padding: 1rem 7rem 2rem 7rem;
+    color: white;
+    position: relative;
+    background-image: url("/footer-bg.png");
+    background-size: 100vw;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+}
+
+.ellipse5 {
+    position: absolute;
+    top: -120px;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background-image: url("/Ellipse5.png");
+    background-repeat: no-repeat;
+    background-size: 100vw;
+    z-index: 100;
+}
+
+.footerLinks {
+    display: flex;
+    gap: 4rem;
+}
+
+.footerLinks ul {
+    list-style: none;
+    font-size: 13px;
+    line-height: 1.5rem;
+}
+
+.footerLinks ul li:first-child {
+    margin-bottom: 0.5rem;
+    font-size: 15px;
+}
+
+.footer span {
+    flex-grow: 1;
+}
+
+.socialLinks {
+    display: flex;
+    gap: 0.7rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+.app {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7rem;
+    margin-top: 0.4rem;
+    align-items: center;
+}
+
+.app button {
+    background-color: transparent;
+    padding: 0.7rem 1.8rem;
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: 13px;
+    border: none;
+    color: white;
+    margin-bottom: 2rem;
+    border: 1px solid white;
+}
