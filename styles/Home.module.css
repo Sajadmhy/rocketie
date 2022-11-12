@@ -27,6 +27,7 @@
     background-repeat: no-repeat;
     font-family: "Clash Display";
     position: relative;
+    z-index: 10;
 }
 
 .nav {
@@ -34,7 +35,6 @@
     align-items: center;
     justify-content: space-between;
     padding: 1rem 7rem;
-    background: linear-gradient(158.2deg, #0C0D13 14.04%, #0C0D13 31.51%, rgba(12, 13, 19, 0.9) 60.08%, rgba(12, 13, 19, 0) 92.4%);
 }
 
 .nav ul {
@@ -89,10 +89,12 @@
     width: 400px;
     font-size: 15px;
     line-height: 1.5;
+    z-index: 1;
 }
 
 .headerPara span {
     opacity: 0.7;
+    z-index: 1;
 }
 
 .heroBtns {
@@ -101,6 +103,11 @@
     margin-top: 2rem;
     margin-bottom: 12rem;
 }
+
+.heroBtns button {
+    z-index: 1;
+}
+
 
 .hero button:first-of-type {
     background-color: #39BEF0;
@@ -122,27 +129,9 @@
     border: solid 1px white;
 }
 
-.card1 {
-    position: absolute;
-    bottom: 118px;
-    right: 265px;
-    transform: rotate(-13.42deg);
+.appUpMobile {
+    display: none;
 }
-
-.card2 {
-    position: absolute;
-    bottom: 100px;
-    right: 545px;
-    transform: rotate(-13.42deg);
-}
-
-.card3 {
-    position: absolute;
-    bottom: 220px;
-    right: 40px;
-    transform: rotate(-13.42deg);
-}
-
 
 .appUp {
     position: absolute;
@@ -154,11 +143,15 @@
 }
 
 .ellipse {
-    /* width: 100vw; */
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100vw;
     height: 150px;
     background-image: url("/Ellipse1.png");
     background-repeat: no-repeat;
-    background-size: 100vw;
+    background-size: cover;
+    background-position: center;
 }
 
 /* nft section */
@@ -189,15 +182,30 @@
     display: flex;
     gap: 1.5rem;
     margin-top: 2rem;
+    /* height: 280px; */
+    flex-wrap: wrap;
+}
+
+.nftCard1 {
+    height: 280px;
+}
+
+.nftCard3 {
+    height: 280px;
+}
+
+.nftCard5 {
     height: 280px;
 }
 
 .nftCard2 {
-    align-self: flex-end;
+    padding-top: 2rem;
+    height: 280px;
 }
 
 .nftCard4 {
-    align-self: flex-end;
+    padding-top: 2rem;
+    height: 280px;
 }
 
 .nftSection h3 {
@@ -228,13 +236,14 @@
 
 .ellipse2 {
     position: absolute;
-    bottom: -120px;
+    bottom: -90px;
     right: 0;
     width: 100%;
     height: 150px;
     background-image: url("/Ellipse2.png");
     background-repeat: no-repeat;
     background-size: 100vw;
+    background-position: center;
     z-index: 100;
 }
 
@@ -245,9 +254,10 @@
     padding: 4rem 10rem;
     color: white;
     position: relative;
-    background-image: url("/roadmap-big.png");
+    background-image: url("/roadmap-bg.png");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     text-align: center;
 }
 
@@ -266,6 +276,22 @@
 
 .emptyHeight {
     height: 400px;
+}
+
+.bigRoadmap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: center;
+    background-image: url("/roadmap-big.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 90%;
+}
+
+.smallRoadmap {
+    display: none;
 }
 
 .roadmapBtns {
@@ -307,13 +333,14 @@
 
 .ellipse3 {
     position: absolute;
-    top: -70px;
+    top: -100px;
     right: 0;
     width: 100%;
     height: 150px;
     background-image: url("/Ellipse3.png");
     background-repeat: no-repeat;
-    background-size: 100vw;
+    background-size: cover;
+    background-position: center;
 }
 
 .team h2 {
@@ -330,9 +357,10 @@
 }
 
 .teamCards {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.8rem;
 }
 
 .teamCard {
@@ -410,13 +438,14 @@
 
 .ellipse4 {
     position: absolute;
-    bottom: -120px;
+    bottom: -90px;
     right: 0;
     width: 100%;
     height: 150px;
     background-image: url("/Ellipse4.png");
     background-repeat: no-repeat;
     background-size: 100vw;
+    background-position: center;
     z-index: 100;
 }
 
@@ -460,8 +489,6 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
     border-radius: 7px;
 }
 
@@ -479,7 +506,6 @@
     position: absolute;
     top: 0;
     right: 0;
-    height: 100%;
     border-radius: 7px;
 }
 
@@ -571,27 +597,30 @@
     color: white;
     position: relative;
     background-image: url("/footer-bg.png");
-    background-size: 100vw;
+    background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
     position: relative;
     display: flex;
 }
 
 .ellipse5 {
     position: absolute;
-    top: -120px;
+    top: -140px;
     left: 0;
     width: 100%;
     height: 150px;
     background-image: url("/Ellipse5.png");
     background-repeat: no-repeat;
-    background-size: 100vw;
+    background-size: cover;
+    background-position: center;
     z-index: 100;
 }
 
 .footerLinks {
     display: flex;
     gap: 4rem;
+    flex-wrap: wrap;
 }
 
 .footerLinks ul {
@@ -635,3 +664,167 @@
     margin-bottom: 2rem;
     border: 1px solid white;
 }
+
+
+
+@media screen and (max-width: 768px) {
+    .nav {
+        padding: 2rem 2rem;
+    }
+    
+    .nav ul {
+        display: none;
+    }
+
+    .heroBG {
+        background-image: url("/hero-bg-mobile.png");
+        padding-bottom:27rem ;
+    }
+
+    .navEnd button {
+        display: none;
+    }
+
+    .appUpMobile {
+        display: block;
+    }
+
+    .appUp {
+        display: none;
+    }
+
+    .hero {
+        padding: 2rem 2rem;
+    }
+
+    .header {
+        text-align: center;
+        width: 100%;
+        font-size: 35px;
+    }
+
+    .headerPara {
+        text-align: center;
+        width: 100%;
+        line-height: 1.8rem;
+    }
+
+    .heroBtns {
+        justify-content: center;
+        margin-bottom: 0;
+    }
+
+    .nftSection {
+        padding: 2rem 2rem;
+    }
+
+    .nftSection h2 {
+        font-size: 25px;
+    }
+
+    .nftCards {
+        height: fit-content;
+    }
+
+    .roadmap {
+        padding: 2rem 2rem;
+        background-image: url("/roadmap-bg.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .emptyHeight {
+        height: 540px;
+    }
+    .bigRoadmap {
+        display: none;
+    }
+    .smallRoadmap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        justify-content: center;
+        background-image: url("/roadmap-small.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 500px;
+    }
+
+    .team {
+        padding: 2rem 2rem;
+    }
+
+    .team h2 {
+        font-size: 25px;
+    }
+
+    .mint {
+        padding: 2rem 0;
+    }
+
+    .mint p {
+        font-size: 10px;
+        margin-bottom: 0;
+    }
+
+    .mint h2 {
+        font-size: 25px;
+    }
+
+    .banner {
+        margin: 2rem 2rem;
+        background-image: url("/banner-pic-left.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .bannerOverlay1 {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(90deg, #101219 3.42%, rgba(16, 18, 25, 0.86) 31.89%, rgba(16, 18, 25, 0) 100%);
+        border-radius: 7px;
+        z-index: 100;
+    }
+
+    .bannerPic1 {
+        display: none;
+    }
+
+    .bannerPic2 {
+        display: none;
+    }
+
+    .bannerOverlay2 {
+        display: none;
+    }
+
+    .footerLogo {
+        display: none;
+    }
+
+    .socialLinks {
+        position: absolute;
+        right: 50px;
+        top: 20px;
+    }
+
+    .app {
+        position: absolute;
+        right: 50px;
+        top: 250px;
+    }
+
+    .footerLinks {
+        margin-top: 4rem;
+        gap: 1.5rem;
+        height: 320px;
+    }
+
+    .footer {
+        padding: 2rem;
+    }
+}
+    

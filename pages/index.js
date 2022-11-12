@@ -23,8 +23,12 @@ export default function Home() {
               <li>Team</li>
               <li>Mint</li>
             </ul>
+            <span></span>
             <div className={styles.navEnd}>
               <Image src="/opensea.png" width={18} height={18} alt="opensea logo" />
+              <div className={styles.appUpMobile}>
+                <Image src="/app-store.png" width={101} height={30} alt="download from app store"/>
+              </div>
               <button>Play now</button>
             </div>
           </nav>
@@ -39,15 +43,7 @@ export default function Home() {
               <button>View NFTs</button>
             </div>
           </div>
-          <div className={styles.card1}>
-            <Image src="/card1.png" height={420} width={270} alt="card" />
-          </div>
-          <div className={styles.card2}>
-            <Image src="/card2.png" height={300} width={200} alt="card" />
-          </div>
-          <div className={styles.card3}>
-            <Image src="/card3.png" height={300} width={200} alt="card" />
-          </div>
+          
           <div className={styles.appUp}>
             <Image src="/app-store.png" width={101} height={30} alt="download from app store"/>
             <Image src="/google-play.png" width={116} height={45} alt="download from app store"/>
@@ -91,9 +87,11 @@ export default function Home() {
         </div>
 
         <div className={styles.roadmap}>
-          <p>FOLLOW ALONG WITH OUR</p>/
+          <p>FOLLOW ALONG WITH OUR</p>
           <h2>Roadmap</h2>
           <div className={styles.emptyHeight}>
+            <div className={styles.bigRoadmap}></div>
+            <div className={styles.smallRoadmap}></div>
           </div>
           <div className={styles.roadmapBtns}>
             <button>Play now</button>
@@ -240,7 +238,7 @@ export default function Home() {
 
       <footer className={styles.footer}>
         <div className={styles.ellipse5}></div>
-        <div><Image src="/logo.png" width={54} height={54} alt="logo"/></div>
+        <div className={styles.footerLogo}><Image src="/logo.png" width={54} height={54} alt="logo"/></div>
         
         <div className={styles.footerLinks}>
           <div>
