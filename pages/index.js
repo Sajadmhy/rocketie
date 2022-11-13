@@ -236,7 +236,7 @@ export default function Home() {
                 <div onClick={() => handleSelect(3)} id={`${selected[3]? styles.selected : styles.unselected }`}> 4</div>
                 <div onClick={() => handleSelect(4)} id={`${selected[4]? styles.selected : styles.unselected }`}> 5</div>
               </div>
-              <div className={styles.result}>0.11ETH <span>/ 1 Rocketie</span></div>
+              <div className={styles.result}>{0.11 * (selected.indexOf(true)+1)}ETH <span>/ 1 Rocketie</span></div>
               <p>Limit of 5 Rocketie per user on launch.</p>
               <button>Mint Now</button>            
             </div>
