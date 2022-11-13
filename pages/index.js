@@ -1,10 +1,19 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
+import { useState } from 'react';
 
 export default function Home() {
 
+  const [selected, setSelected] = useState([true, false, false, false, false]);
   
+  const handleSelect = (index) => {
+    const newSelected = [false, false, false, false, false];
+    newSelected[index] = true;
+    setSelected(newSelected);
+  }
+
+
   return (
     <div>
       <Head>
@@ -221,11 +230,11 @@ export default function Home() {
               <button>Connect Wallet</button>
               <p>How many do you want?</p>
               <div className={styles.selection}>
-                <div id={styles.selected}>1</div>
-                <div>2</div>
-                <div>3</div>
-                <div>4</div>
-                <div>5</div>
+                <div onClick={() => handleSelect(0)} id={`${selected[0]? styles.selected : styles.unselected }`}> 1</div>
+                <div onClick={() => handleSelect(1)} id={`${selected[1]? styles.selected : styles.unselected }`}> 2</div>
+                <div onClick={() => handleSelect(2)} id={`${selected[2]? styles.selected : styles.unselected }`}> 3</div>
+                <div onClick={() => handleSelect(3)} id={`${selected[3]? styles.selected : styles.unselected }`}> 4</div>
+                <div onClick={() => handleSelect(4)} id={`${selected[4]? styles.selected : styles.unselected }`}> 5</div>
               </div>
               <div className={styles.result}>0.11ETH <span>/ 1 Rocketie</span></div>
               <p>Limit of 5 Rocketie per user on launch.</p>
