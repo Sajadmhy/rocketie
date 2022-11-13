@@ -1,9 +1,17 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 export default function Home() {
+
+  // initialize aos
+  useEffect(() => {
+    Aos.init({ duration: 1000 });
+  }, []);
+
 
   const [selected, setSelected] = useState([true, false, false, false, false]);
   
@@ -62,7 +70,7 @@ export default function Home() {
 
         <div className={styles.nftSection}>
           <h2>Play and earn collectible <div>items and NFTs</div></h2>
-          <div className={styles.nftCards}>
+          <div data-aos="fade-right" className={styles.nftCards}>
             <div className={styles.nftCard1}>
               <Image src="/nft1.png" width={150} height={150} alt="nft card"/>
               <h3><div>0.05ETH</div> <Image src="/opensea.png" width={18} height={18} alt="nft card title"/></h3>
@@ -95,21 +103,25 @@ export default function Home() {
         </div>
 
         <div className={styles.roadmap}>
+          <div data-aos="fade-left">
           <p>FOLLOW ALONG WITH OUR</p>
           <h2>Roadmap</h2>
-          <div className={styles.emptyHeight}>
-            <div className={styles.bigRoadmap}></div>
-            <div className={styles.smallRoadmap}></div>
-          </div>
-          <div className={styles.roadmapBtns}>
-            <button>Play now</button>
-            <button>Mint NFT</button>
+            <div className={styles.emptyHeight}>
+              <div className={styles.bigRoadmap}></div>
+              <div className={styles.smallRoadmap}></div>
+            </div>
+            <div className={styles.roadmapBtns}>
+              <button>Play now</button>
+              <button>Mint NFT</button>
+            </div>
           </div>
         </div>
 
         <div className={styles.team}>
             <div className={styles.ellipse3}>
             </div>
+            <div data-aos="fade-right">
+
             <h2>Meet the <span>team</span></h2>
             <div className={styles.teamCards}>
               <div className={styles.teamCard}>
@@ -207,6 +219,7 @@ export default function Home() {
                   <Image src="/Rocketie.png" width={59} height={59} alt="rocketie"/>
                 </div>
               </div>
+              </div>
 
             </div>
             <div className={styles.ellipse4}>
@@ -214,6 +227,8 @@ export default function Home() {
         </div>  
 
         <div className={styles.mint}>
+          <div data-aos='fade-left'>
+
           <p id={styles.mintP}>300/6000 REMAINING</p>
           <h2>Mint now</h2>
           <div className={styles.banner}>
@@ -240,6 +255,7 @@ export default function Home() {
               <div className={styles.emptyHeight2}></div>
               <button>Mint Now</button>            
             </div>
+          </div>
           
           </div>
         </div>
@@ -247,7 +263,9 @@ export default function Home() {
 
       <footer className={styles.footer}>
         <div className={styles.ellipse5}></div>
-        <div className={styles.footerLogo}><Image src="/logo.png" width={54} height={54} alt="logo"/></div>
+
+        <div data-aos="fade-up" className={styles.footerContainer}>
+          <div className={styles.footerLogo}><Image src="/logo.png" width={54} height={54} alt="logo"/></div>
         
         <div className={styles.footerLinks}>
           <div>
@@ -288,6 +306,7 @@ export default function Home() {
           <button>Play now</button>
           <Image src="/app-store.png" width={115} height={35} alt="download from app store"/>
           <Image src="/google-play.png" width={132} height={51} alt="download from app store"/>
+        </div>
         </div>
       </footer>
       
