@@ -17,6 +17,14 @@
     font-family: "Clash Display";
     position: relative;
     z-index: 10;
+    overflow: hidden;
+}
+
+.orbit1 {
+    position: absolute;
+    top: 248px;
+    left: 489px;
+    z-index: -100;
 }
 
 .nav {
@@ -615,6 +623,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    overflow: hidden;
 }
 
 .footerContainer {
@@ -696,14 +705,28 @@
     margin-bottom: 2rem;
     border: 1px solid white;
     cursor: pointer;
+    z-index: 10;
 }
 
 .app img {
     cursor: pointer;
 }
 
+.orbit2 {
+    position: absolute;
+    bottom: -105px;
+    right: 401px;
+}
+
 
 @media screen and (max-width: 768px) {
+    .orbit1 {
+        position: absolute;
+        top: 350px;
+        left: -100px;
+        z-index: -10;
+    }
+    
     .nav {
         padding: 18px 41px;
     }
@@ -924,8 +947,13 @@
         height: 320px;
     }
 
-    .footer {
+    .footerContainer {
         padding: 2rem;
+    }
+
+    .orbit2 {
+        right: -30px;
+        z-index: -10;
     }
 }
     

@@ -4,6 +4,7 @@ import styles from '../styles/Home.module.css'
 import { useState, useEffect } from 'react';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
+import Orbit from '../component/Orbit';
 
 export default function Home() {
 
@@ -31,6 +32,7 @@ export default function Home() {
       </Head>
       <main className={styles.container}>
         <div className={styles.heroBG}>
+          <div className={styles.orbit1}><Orbit/></div>
           <nav className={styles.nav}>
             <Image src="/logo.png" height={75} width={75} alt="logo" />
             <ul>
@@ -307,6 +309,7 @@ export default function Home() {
           <Image src="/app-store.png" width={115} height={35} alt="download from app store"/>
           <Image src="/google-play.png" width={132} height={51} alt="download from app store"/>
         </div>
+        <div className={styles.orbit2}><Orbit/></div>
         </div>
       </footer>
       

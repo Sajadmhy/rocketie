@@ -1,0 +1,86 @@
+#container {
+    position: relative;
+    top: 25px;
+    left: 25px;
+    height: 300px;
+    width: 300px;
+  }
+  
+  #innerOrbit {
+    position: absolute;
+    top: 75px;
+    left: 75px;
+    width: 150px;
+    height: 150px;
+    border: 1px rgba(57, 190, 240,0.4) solid;
+    border-radius: 100%;
+    -webkit-animation: spin-right 10s linear infinite;
+    animation: spin-right 10s linear infinite;
+  }
+  
+  .innerOrbitCirlces {
+    position: absolute;
+    top: 60px;
+    left: -4px;
+    height: 9px;
+    width: 9px;
+    border-radius: 100%;
+    background-color: rgba(0, 255, 202,0.4);
+  }
+  
+  #middleOrbit {
+    position: absolute;
+    top: 35px;
+    left: 35px;
+    width: 225px;
+    height: 225px;
+    border: 1px rgba(57, 190, 240,0.4) solid;
+    border-radius: 100%;
+    -webkit-animation: spin-right 15s linear infinite;
+    animation: spin-right 15s linear infinite;
+  }
+  
+  .middleOrbitCirlces {
+    position: absolute;
+    top: 33px;
+    left: 17px;
+    height: 20px;
+    width: 20px;
+  }
+  
+  #outerOrbit {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 294px;
+    height: 294px;
+    border: 1px rgba(57, 190, 240,0.4) solid;
+    border-radius: 100%;
+    -webkit-animation: spin-right 20s linear infinite;
+    animation: spin-right 20s linear infinite;
+  }
+  
+  .outerOrbitCirlces {
+    position: absolute;
+    top: -7px;
+    left: 125px;
+    width: 10px; 
+    height: 10px; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;  
+    border-bottom: 15px solid rgb(57, 190, 240 , 0.4);
+  }
+  
+  @keyframes spin-right {
+    100% {
+      -webkit-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+
+  }
