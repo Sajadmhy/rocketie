@@ -23,8 +23,20 @@
 .orbit1 {
     position: absolute;
     top: 248px;
-    left: 489px;
+    left: 35%;
     z-index: -100;
+}
+
+.card2 img {
+    position: absolute;
+    rotate: -13.42deg;
+    top: 43%;
+    right: 41%;
+    z-index: -1;
+}
+
+.card2Mobile {
+    display: none;
 }
 
 .nav {
@@ -66,6 +78,12 @@
     font-weight: bold;
     font-size: 13px;
     cursor: pointer;
+}
+
+.nav button:hover {
+    background-color: #39BEF0;
+    border: solid 1px #39BEF0;
+    transition: 0.4s;
 }
 
 .hero {
@@ -309,8 +327,8 @@
 }
 
 .roadmapBtns button {
-    z-index: 1;
     cursor: pointer;
+    z-index: 100;
 }
 
 .roadmapBtns button:first-of-type {
@@ -321,6 +339,7 @@
     font-weight: bold;
     font-size: 13px;
     border: none;
+    z-index: 100;
 }
 
 .roadmapBtns button:nth-of-type(2) {
@@ -346,7 +365,7 @@
 
 .ellipse3 {
     position: absolute;
-    top: -140px;
+    top: -70px;
     right: 0;
     width: 100vw;
     height: 190px;
@@ -726,7 +745,19 @@
         left: -100px;
         z-index: -10;
     }
+
+    .card2 {
+        display: none;
+    }
     
+    .card2Mobile {
+        display: block;
+        position: absolute;
+        top: 490px;
+        left: 18%;
+        rotate: -13.42deg;
+    }
+
     .nav {
         padding: 18px 41px;
     }

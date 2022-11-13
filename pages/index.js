@@ -33,6 +33,8 @@ export default function Home() {
       <main className={styles.container}>
         <div className={styles.heroBG}>
           <div className={styles.orbit1}><Orbit/></div>
+          <div className={styles.card2}><img src="/card2.png" alt="card" /></div>
+          <div className={styles.card2Mobile}><img src="/card2-mobile.png" alt="card" /></div>
           <nav className={styles.nav}>
             <Image src="/logo.png" height={75} width={75} alt="logo" />
             <ul>
