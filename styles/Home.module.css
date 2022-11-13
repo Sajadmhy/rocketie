@@ -55,6 +55,10 @@
     align-items: center;
 }
 
+.navEnd img {
+    cursor: pointer;
+}
+
 .nav button {
     color: white;
     background-color: transparent;;
@@ -63,6 +67,7 @@
     border-radius: 5px;
     font-weight: bold;
     font-size: 13px;
+    cursor: pointer;
 }
 
 .hero {
@@ -106,6 +111,7 @@
 
 .heroBtns button {
     z-index: 1;
+    cursor: pointer;
 }
 
 
@@ -140,6 +146,10 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.appUp img {
+    cursor: pointer;
 }
 
 .ellipse {
@@ -184,6 +194,10 @@
     margin-top: 2rem;
     /* height: 280px; */
     flex-wrap: wrap;
+}
+
+.nftCards button {
+    cursor: pointer;
 }
 
 .nftCard1 {
@@ -298,6 +312,11 @@
     display: flex;
     justify-content: center;
     gap: 0.5rem;
+}
+
+.roadmapBtns button {
+    z-index: 1;
+    cursor: pointer;
 }
 
 .roadmapBtns button:first-of-type {
@@ -418,6 +437,10 @@
     gap: 0.5rem;
 }
 
+.cardText h3 img {
+    cursor: pointer;
+}
+
 .cardText span {
     flex-grow: 1;
 }
@@ -529,6 +552,10 @@
     text-align: center;
 }
 
+.bannerText button {
+    cursor: pointer;
+}
+
 .bannerText button:first-of-type {
     background-color: #242630;
     padding: 0.7rem 1.5rem;
@@ -578,6 +605,7 @@
     font-size: 19px;
     border: none;
     color: white;
+    cursor: pointer;
 }
 
 #selected {
@@ -632,6 +660,12 @@
 .footerLinks ul li:first-child {
     margin-bottom: 0.5rem;
     font-size: 15px;
+    cursor:default;
+}
+
+.footerLinks ul li {
+    width: fit-content;
+    cursor: pointer;
 }
 
 .footer span {
@@ -643,6 +677,10 @@
     gap: 0.7rem;
     margin-top: 1rem;
     margin-right: 1rem;
+}
+
+.socialLinks img {
+    cursor: pointer;
 }
 
 .app {
@@ -663,8 +701,12 @@
     color: white;
     margin-bottom: 2rem;
     border: 1px solid white;
+    cursor: pointer;
 }
 
+.app img {
+    cursor: pointer;
+}
 
 
 @media screen and (max-width: 768px) {

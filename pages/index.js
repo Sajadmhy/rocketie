@@ -45,8 +45,8 @@ export default function Home() {
           </div>
           
           <div className={styles.appUp}>
-            <Image src="/app-store.png" width={101} height={30} alt="download from app store"/>
-            <Image src="/google-play.png" width={116} height={45} alt="download from app store"/>
+            <a href='#'><Image src="/app-store.png" width={101} height={30} alt="download from app store"/></a>
+            <a href='#'><Image src="/google-play.png" width={116} height={45} alt="download from app store"/></a>
           </div>
           <div className={styles.ellipse}>  
           </div>
