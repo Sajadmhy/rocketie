@@ -23,7 +23,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 7rem;
+    padding: 1rem 121px;
 }
 
 .nav ul {
@@ -32,6 +32,7 @@
     list-style: none;
     gap: 3rem;
     font-size: 13px;
+
 }
 
 .nav li {
@@ -61,7 +62,7 @@
 
 .hero {
     color: white;
-    padding:4rem 8rem;
+    padding:4rem 145px;
 }
 .header {
     font-size: 50px;
@@ -101,26 +102,21 @@
 .heroBtns button {
     z-index: 1;
     cursor: pointer;
+    color: white;
+    padding: 0.8rem 2rem;
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: 13px;
 }
 
 
 .hero button:first-of-type {
     background-color: #39BEF0;
-    color: white;
-    padding: 0.8rem 2rem;
-    border-radius: 7px;
-    font-weight: bold;
-    font-size: 13px;
     border: none;
 }
 
 .hero button:nth-of-type(2) {
     background-color: transparent;
-    color: white;
-    padding: 0.8rem 2rem;
-    border-radius: 7px;
-    font-weight: bold;
-    font-size: 13px;
     border: solid 1px white;
 }
 
@@ -130,7 +126,7 @@
 
 .appUp {
     position: absolute;
-    bottom: 150px;
+    bottom: 130px;
     right: 120px;
     display: flex;
     flex-direction: column;
@@ -143,10 +139,10 @@
 
 .ellipse {
     position: absolute;
-    bottom: 0;
+    bottom: -55px;
     right: 0;
     width: 100vw;
-    height: 150px;
+    height: 190px;
     background-image: url("/Ellipse1.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -156,7 +152,7 @@
 /* nft section */
 
 .nftSection {
-    padding: 4rem 10rem;
+    padding: 4rem 50px;
     background-image: url("/nft-bg.webp");
     color: white;
     background-size: cover;
@@ -233,16 +229,17 @@
     opacity: 0.3;
     background-color: transparent;
     border: solid 1px white;
-    padding: 0.7rem 0.7rem;
+    width: 70px;
+    height: 42px;
     border-radius: 7px;
 }
 
 .ellipse2 {
     position: absolute;
-    bottom: -90px;
+    bottom: -120px;
     right: 0;
     width: 100%;
-    height: 150px;
+    height: 190px;
     background-image: url("/Ellipse2.png");
     background-repeat: no-repeat;
     background-size: 100vw;
@@ -254,7 +251,7 @@
 /* roadmap section */
 
 .roadmap {
-    padding: 4rem 10rem;
+    padding: 4rem 215px;
     color: white;
     position: relative;
     background-image: url("/roadmap-bg.webp");
@@ -331,7 +328,7 @@
 /* team section */
 
 .team {
-    padding: 4rem 10rem;
+    padding: 4rem 209px;
     color: white;
     position: relative;
     background-image: url("/team-bg.webp");
@@ -341,10 +338,10 @@
 
 .ellipse3 {
     position: absolute;
-    top: -100px;
+    top: -140px;
     right: 0;
-    width: 100%;
-    height: 150px;
+    width: 100vw;
+    height: 190px;
     background-image: url("/Ellipse3.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -450,22 +447,22 @@
 
 .ellipse4 {
     position: absolute;
-    bottom: -90px;
+    bottom: -113px;
     right: 0;
-    width: 100%;
-    height: 150px;
+    width: 100vw;
+    height: 200px;
     background-image: url("/Ellipse4.png");
     background-repeat: no-repeat;
     background-size: 100vw;
     background-position: center;
-    z-index: 100;
+    z-index: 101;
 }
 
 
 /* mint section */
 
 .mint {
-    padding: 4rem 10rem;
+    padding: 4rem 211px;
     color: white;
     position: relative;
     background-image: url("/mint-bg.webp");
@@ -506,7 +503,7 @@
 
 .bannerOverlay1 {
     position: absolute;
-    width: 382px;
+    width: 383px;
     height: 405px;
     background: linear-gradient(270deg, #101219 0%, rgba(16, 18, 25, 0.84) 28.01%, rgba(16, 18, 25, 0) 100%);
     border-radius: 10px 0px 0px 10px;
@@ -524,7 +521,7 @@
 .bannerOverlay2 {
     position: absolute;
     right: 0;
-    width: 382px;
+    width: 383px;
     height: 405px;
     background: linear-gradient(90deg, #101219 3.42%, rgba(16, 18, 25, 0.86) 31.89%, rgba(16, 18, 25, 0) 100%);
     border-radius: 0px 10px 10px 0px;
@@ -543,33 +540,28 @@
 
 .bannerText button {
     cursor: pointer;
+    padding: 0.7rem 1.5rem;
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: 13px;
+    border: none;
+    color: white;
+    margin-bottom: 2rem;
 }
 
 .bannerText button:first-of-type {
     background-color: #242630;
-    padding: 0.7rem 1.5rem;
-    border-radius: 7px;
-    font-weight: bold;
-    font-size: 13px;
-    border: none;
-    color: white;
-    margin-bottom: 2rem;
+    
 }
 
 .bannerText button:nth-of-type(2) {
     background-color: #39BEF0;
-    padding: 0.7rem 1.5rem;
-    border-radius: 7px;
-    font-weight: bold;
-    font-size: 13px;
-    border: none;
-    color: white;
-    margin-bottom: 2rem;
 }
 
 .bannerText p {
     color: white;
     font-size: 16px;
+    font-weight: 500;
     font-family: "Clash Display";
     margin: 1rem 0;
 }
@@ -601,16 +593,23 @@
     background-color: #39BEF0;
 }
 
+.result {
+    font-weight: 600;
+}
 
 .result span {
     opacity: 0.4;
+}
+
+.emptyHeight2 {
+    height: 50px;
 }
 
 /* footer section */
 
 .footer {
     font-family: "Clash Display";
-    padding: 1rem 7rem 2rem 7rem;
+    padding: 1rem 121px 2rem 121px;
     color: white;
     position: relative;
     background-image: url("/footer-bg.webp");
@@ -700,7 +699,7 @@
 
 @media screen and (max-width: 768px) {
     .nav {
-        padding: 2rem 2rem;
+        padding: 18px 41px;
     }
     
     .nav ul {
@@ -709,7 +708,16 @@
 
     .heroBG {
         background-image: url("/hero-bg-mobile.webp");
-        padding-bottom:27rem ;
+        padding-bottom:10rem ;
+    }
+
+    .navEnd img {
+        display: flex;
+    }
+
+    .openSea {
+        position: relative;
+        left: 0.6rem;
     }
 
     .navEnd button {
@@ -725,24 +733,36 @@
     }
 
     .hero {
-        padding: 2rem 2rem;
+        padding: 2rem 63px;
     }
 
     .header {
         text-align: center;
         width: 100%;
-        font-size: 35px;
+        font-size: 30px;
     }
 
     .headerPara {
         text-align: center;
         width: 100%;
-        line-height: 1.8rem;
+        line-height: 20px;
+        font-size: 11px;
+        padding: 0 10px;
     }
 
     .heroBtns {
+        gap: 7.89px;
+        padding: 0 40px;
+    }
+
+    .heroBtns button {
         justify-content: center;
         margin-bottom: 0;
+        width: 92.52px;
+        height: 38px;
+        font-size: 12px;
+        padding:0 0;
+        margin: 0 auto;
     }
 
     .nftSection {
@@ -758,15 +778,24 @@
     }
 
     .roadmap {
-        padding: 2rem 2rem;
+        padding: 2rem 23px;
         background-image: url("/roadmap-bg.webp");
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center;
     }
 
+    .roadmap p {
+        font-size: 10px;
+        margin-bottom: -20px;
+    }
+
+    .roadmap h2 {
+        font-size: 30px;
+    }
+
     .emptyHeight {
-        height: 540px;
+        height: 530px;
     }
     .bigRoadmap {
         display: none;
@@ -784,28 +813,29 @@
     }
 
     .team {
-        padding: 2rem 2rem;
+        padding: 2rem 45px;
     }
 
     .team h2 {
-        font-size: 25px;
+        font-size: 22px;
     }
 
     .mint {
         padding: 2rem 0;
     }
 
-    .mint p {
+    #mintP {
         font-size: 10px;
-        margin-bottom: 0;
+        margin-top: 80px;
+        margin-bottom: -20px;
     }
 
     .mint h2 {
-        font-size: 25px;
+        font-size: 30px;
     }
 
     .banner {
-        margin: 2rem 2rem;
+        margin: 2rem 45px;
         background-image: url("/banner-pic-left.png");
         background-size: cover;
         background-repeat: no-repeat;
@@ -830,6 +860,40 @@
 
     .bannerOverlay2 {
         display: none;
+    }
+
+    .bannerText button:first-of-type {
+        padding:0;
+        width: 130px;
+        height: 40px;
+    }
+
+    .bannerText p {
+        font-size: 10px;
+        margin-top: 0;
+    }
+
+    .selection {
+        gap: 0.2rem;
+        margin-bottom: 1rem;
+    }
+    
+    .selection div {
+        background-color: #181B23;
+        padding: 0;
+        width: 46px;
+        height: 46px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 7px;
+        font-weight:500;
+        font-size: 20px;
+    }
+
+    .result {
+        font-size: 14px;
+        margin: 10px;
     }
 
     .footerLogo {

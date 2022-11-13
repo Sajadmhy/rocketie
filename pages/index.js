@@ -32,11 +32,10 @@ export default function Home() {
               <li>Team</li>
               <li>Mint</li>
             </ul>
-            <span></span>
             <div className={styles.navEnd}>
-              <Image src="/opensea.png" width={18} height={18} alt="opensea logo" />
+              <div className={styles.openSea}><Image src="/opensea.png" width={18} height={18} alt="opensea logo" /></div>
               <div className={styles.appUpMobile}>
-                <Image src="/app-store.png" width={101} height={30} alt="download from app store"/>
+                <Image src="/app-store.png" width={121} height={35.85} alt="download from app store"/>
               </div>
               <button>Play now</button>
             </div>
@@ -215,7 +214,7 @@ export default function Home() {
         </div>  
 
         <div className={styles.mint}>
-          <p>300/6000 REMAINING</p>
+          <p id={styles.mintP}>300/6000 REMAINING</p>
           <h2>Mint now</h2>
           <div className={styles.banner}>
             <div className={styles.bannerOverlay1}>
@@ -238,6 +237,7 @@ export default function Home() {
               </div>
               <div className={styles.result}>{0.11 * (selected.indexOf(true)+1)}ETH <span>/ 1 Rocketie</span></div>
               <p>Limit of 5 Rocketie per user on launch.</p>
+              <div className={styles.emptyHeight2}></div>
               <button>Mint Now</button>            
             </div>
           
