@@ -262,12 +262,12 @@ export default function Home() {
           </div>
           
           </div>
+        <div className={styles.ellipse5}></div>
         </div>
       </main>
 
       <footer className={styles.footer}>
-        <div className={styles.ellipse5}></div>
-
+        
         <div data-aos="fade-up" className={styles.footerContainer}>
           <div className={styles.footerLogo}><Image src="/logo.png" width={54} height={54} alt="logo"/></div>
         

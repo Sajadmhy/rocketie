@@ -287,6 +287,7 @@
     background-repeat: no-repeat;
     background-position: center;
     text-align: center;
+    position: relative;
 }
 
 .roadmap h2 {
@@ -658,15 +659,15 @@
 
 .ellipse5 {
     position: absolute;
-    top: -140px;
+    bottom: -10px !important;
     left: 0;
-    width: 100%;
-    height: 150px;
+    width: 1621px;
+    height: 143px;
     background-image: url("/Ellipse5.png");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    z-index: 100;
+    z-index: 300;
 }
 
 .footerLinks {
@@ -822,9 +823,21 @@
         margin-bottom: 0;
         width: 92.52px;
         height: 38px;
-        font-size: 12 px;
+        font-size: 12px;
         padding:0 0;
         margin: 0 auto;
+    }
+
+    .ellipse {
+        position: absolute;
+        bottom: 0px;
+        right: 0;
+        width: 100%;
+        height: 120px;
+        background-image: url("/Ellipse1-mobile.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
     }
 
     .nftSection {
@@ -835,8 +848,25 @@
         font-size: 25px;
     }
 
+    .nftSection button {
+        font-size: 12px;
+    }
+
     .nftCards {
         height: fit-content;
+    }
+
+    .ellipse2 {
+        position: absolute;
+        top: -20px !important;
+        right: 0;
+        width: 100%;
+        height: 120px;
+        background-image: url("/Ellipse2-mobile.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        z-index: 300;
     }
 
     .roadmap {
@@ -874,12 +904,42 @@
         height: 500px;
     }
 
+    .roadmap button {
+        font-size: 12px;
+    }
+
+    .ellipse3 {
+        position: absolute;
+        top: -100px !important;
+        right: 0;
+        width: 100%;
+        height: 120px;
+        background-image: url("/Ellipse3-mobile.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        z-index: 100;
+    }
+
     .team {
         padding: 2rem 45px;
     }
 
     .team h2 {
         font-size: 22px;
+    }
+
+    .ellipse4 {
+        position: absolute;
+        bottom: -120px;
+        right: 0;
+        width: 100vw;
+        height: 200px;
+        background-image: url("/Ellipse4-mobile.png");
+        background-repeat: no-repeat;
+        background-size: 100vw;
+        background-position: center;
+        z-index: 101;
     }
 
     .mint {
@@ -895,6 +955,7 @@
     .mint h2 {
         font-size: 30px;
     }
+
 
     .banner {
         margin: 2rem 45px;
@@ -970,6 +1031,19 @@
         display: none;
     }
 
+    .ellipse5 {
+        position: absolute;
+        bottom: -10px !important;
+        left: 0;
+        width: 100%;
+        height: 64px;
+        background-image: url("/Ellipse5-mobile.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        z-index: 301;
+    }
+
     .socialLinks {
         position: absolute;
         right: 50px;
@@ -995,6 +1069,10 @@
     .orbit2 {
         right: -30px;
         z-index: -10;
+    }
+
+    .footer button {
+        font-size: 12px;
     }
 }
     
