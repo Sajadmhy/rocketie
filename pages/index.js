@@ -5,6 +5,8 @@ import { useState, useEffect } from 'react';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import Orbit from '../component/Orbit';
+import Roadmap from '../component/Roadmap';
+
 
 export default function Home() {
 
@@ -112,7 +114,8 @@ export default function Home() {
           <p>FOLLOW ALONG WITH OUR</p>
           <h2>Roadmap</h2>
             <div className={styles.emptyHeight}>
-              <div className={styles.bigRoadmap}></div>
+              <Roadmap />
+              {/* <div className={styles.bigRoadmap}></div> */}
               <div className={styles.smallRoadmap}></div>
             </div>
             <div className={styles.roadmapBtns}>
