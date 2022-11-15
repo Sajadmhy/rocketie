@@ -371,7 +371,7 @@
 
 .ellipse3 {
     position: absolute;
-    top: -70px;
+    top: -160px !important;
     right: 0;
     width: 100vw;
     height: 190px;
