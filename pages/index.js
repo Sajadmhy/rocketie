@@ -102,11 +102,11 @@ export default function Home() {
             </div>
             <button>See All</button>
           </div>
-          <div className={styles.ellipse2}>  
-          </div>
         </div>
 
         <div className={styles.roadmap}>
+          <div className={styles.ellipse2}>  
+          </div>
           <div data-aos="fade-left">
           <p>FOLLOW ALONG WITH OUR</p>
           <h2>Roadmap</h2>
