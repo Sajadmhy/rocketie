@@ -111,10 +111,10 @@ export default function Home() {
           <div className={styles.ellipse2}>  
           </div>
           <div data-aos="fade-left">
-          <p>FOLLOW ALONG WITH OUR</p>
+          <p className={styles.roadmapParagraph}>FOLLOW ALONG WITH OUR</p>
           <h2>Roadmap</h2>
             <div className={styles.emptyHeight}>
-              <Roadmap />
+              <div className={styles.roadmapDesktop}><Roadmap /></div>
               {/* <div className={styles.bigRoadmap}></div> */}
               <div className={styles.smallRoadmap}></div>
             </div>
