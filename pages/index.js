@@ -54,9 +54,10 @@ export default function Home() {
           </nav>
 
           <div className={styles.hero}>
-            <h2 className={styles.header}>Fun crypto betting based on <span className={styles.yourSkill}>your skill</span></h2>
+            <h2 className={styles.header}>Creating fun games to wager crypto with 
+<span className={styles.yourSkill}>your friends</span></h2>
             <p className={styles.headerPara}>
-              Enter the NFT universe<span> and experience the most fun crypto betting App available. This description should be roughly two lines.</span>
+            Discover Rocketie studios with their first <span>exclusive NFT</span> release and have a say in a truly decentralised web3 game studio.
             </p>
             <div className={styles.heroBtns}>
               <button>Play now</button>
@@ -77,27 +78,27 @@ export default function Home() {
           <div data-aos="fade-right" className={styles.nftCards}>
             <div className={styles.nftCard1}>
               <Image src="/nft1.png" width={150} height={150} alt="nft card"/>
-              <h3><div>0.05ETH</div> <Image src="/opensea.png" width={18} height={18} alt="nft card title"/></h3>
+              <h3><div>0.64ETH &nbsp; <span>| &nbsp; $800</span></div> <Image src="/opensea.png" width={18} height={18} alt="nft card title"/></h3>
               <p>&quot;MOONBEAM 3000&quot;</p>
             </div>
             <div className={styles.nftCard2}>
               <Image src="/nft2.png" width={150} height={150} alt="nft card"/>
-              <h3><div>0.05ETH</div> <Image src="/opensea.png" width={18} height={18} alt="nft card title"/></h3>
+              <h3><div>0.64ETH &nbsp; <span>| &nbsp; $800</span></div> <Image src="/opensea.png" width={18} height={18} alt="nft card title"/></h3>
               <p>&quot;MOONBEAM 3000&quot;</p>
             </div>
             <div className={styles.nftCard3}>
               <Image src="/nft3.png" width={150} height={150} alt="nft card"/>
-              <h3><div>0.05ETH</div> <Image src="/opensea.png" width={18} height={18} alt="nft card title"/></h3>
+              <h3><div>0.64ETH &nbsp; <span>| &nbsp; $800</span></div> <Image src="/opensea.png" width={18} height={18} alt="nft card title"/></h3>
               <p>&quot;MOONBEAM 3000&quot;</p>
             </div>
             <div className={styles.nftCard4}>
               <Image src="/nft4.png" width={150} height={150} alt="nft card"/>
-              <h3><div>0.05ETH</div> <Image src="/opensea.png" width={18} height={18} alt="nft card title"/></h3>
+              <h3><div>0.64ETH &nbsp; <span>| &nbsp; $800</span></div> <Image src="/opensea.png" width={18} height={18} alt="nft card title"/></h3>
               <p>&quot;MOONBEAM 3000&quot;</p>
             </div>
             <div className={styles.nftCard5}>
               <Image src="/nft5.png" width={150} height={150} alt="nft card"/>
-              <h3><div>0.05ETH</div> <Image src="/opensea.png" width={18} height={18} alt="nft card title"/></h3>
+              <h3><div>0.64ETH &nbsp; <span>| &nbsp; $800</span></div> <Image src="/opensea.png" width={18} height={18} alt="nft card title"/></h3>
               <p>&quot;MOONBEAM 3000&quot;</p>
             </div>
             <button>See All</button>
@@ -128,6 +129,7 @@ export default function Home() {
 
             <h2>Meet the <span>team</span></h2>
             <div className={styles.teamCards}>
+              
               <div className={styles.teamCard}>
                 <div className={styles.cardHead}><Image src="/card-header.png" width={300} height={70} alt="team member"/></div>
                 <div className={styles.profilePlaceholder}>
@@ -136,7 +138,8 @@ export default function Home() {
                 </div>
                 <div className={styles.cardText}>
                   <p>Co-Founder</p>
-                  <h3>Michael Doe <span></span><Image src="/twitter.svg" height={13} width={16} alt="twitter icon"/><Image src="/linkedin.svg" height={13} width={14} alt="linkedin icon"/></h3>
+                  <h3>Marek Fröhlich
+<span></span><Image src="/instagram.svg" height={13} width={14} alt="instagram icon"/></h3>
                 </div>
                 <div className={styles.tags}>
                   <p>#2341</p>
@@ -152,7 +155,8 @@ export default function Home() {
                 </div>
                 <div className={styles.cardText}>
                   <p>Co-Founder</p>
-                  <h3>Jones Matthew <span></span><Image src="/twitter.svg" height={13} width={16} alt="twitter icon"/><Image src="/linkedin.svg" height={13} width={14} alt="linkedin icon"/></h3>
+                  <h3>František Henyš
+                  <span></span><Image src="/instagram.svg" height={13} width={14} alt="instagram icon"/></h3>
                 </div>
                 <div className={styles.tags}>
                   <p>#2341</p>
@@ -167,8 +171,8 @@ export default function Home() {
                   <div><Image src="/member3.png" width={54} height={54} alt="team member"/></div>
                 </div>
                 <div className={styles.cardText}>
-                  <p>Lead Developer</p>
-                  <h3>John Michael <span></span><Image src="/twitter.svg" height={13} width={16} alt="twitter icon"/><Image src="/linkedin.svg" height={13} width={14} alt="linkedin icon"/></h3>
+                  <p>Head of Marketing</p>
+                  <h3>Enrico Miller <span></span><Image src="/twitter.svg" height={13} width={16} alt="twitter icon"/><Image src="/linkedin.svg" height={13} width={14} alt="linkedin icon"/></h3>
                 </div>
                 <div className={styles.tags}>
                   <p>#2341</p>
@@ -183,8 +187,8 @@ export default function Home() {
                   <div><Image src="/member4.png" width={54} height={54} alt="team member"/></div>
                 </div>
                 <div className={styles.cardText}>
-                  <p>Blockchain Strategist</p>
-                  <h3>Joseph Doe <span></span><Image src="/twitter.svg" height={13} width={16} alt="twitter icon"/><Image src="/linkedin.svg" height={13} width={14} alt="linkedin icon"/></h3>
+                  <p>Head of Blockchain Strategy</p>
+                  <h3>Joseph Moulton <span></span><Image src="/instagram.svg" height={13} width={16} alt="instagram icon"/><Image src="/linkedin.svg" height={13} width={14} alt="linkedin icon"/></h3>
                 </div>
                 <div className={styles.tags}>
                   <p>#2341</p>
@@ -199,8 +203,8 @@ export default function Home() {
                 </div>
 
                 <div className={styles.cardText}>
-                  <p>Designer</p>
-                  <h3>Katy Doe <span></span><Image src="/twitter.svg" height={13} width={16} alt="twitter icon"/><Image src="/linkedin.svg" height={13} width={14} alt="linkedin icon"/></h3>
+                  <p>Marketing Strategist</p>
+                  <h3>Daniel Zad <span></span><Image src="/twitter.svg" height={13} width={16} alt="twitter icon"/><Image src="/linkedin.svg" height={13} width={14} alt="linkedin icon"/></h3>
                 </div>
                 <div className={styles.tags}>
                   <p>#2341</p>
@@ -215,8 +219,8 @@ export default function Home() {
                   <div><Image src="/member6.png" width={54} height={54} alt="team member"/></div>
                 </div>
                 <div className={styles.cardText}>
-                  <p>Marketer</p>
-                  <h3>Michelle Doe <span></span><Image src="/twitter.svg" height={13} width={16} alt="twitter icon"/><Image src="/linkedin.svg" height={13} width={14} alt="linkedin icon"/></h3>
+                  <p>Blockchain Strategist</p>
+                  <h3>Kwesi Ashante <span></span><Image src="/twitter.svg" height={13} width={16} alt="twitter icon"/><Image src="/linkedin.svg" height={13} width={14} alt="linkedin icon"/></h3>
                 </div>
                 <div className={styles.tags}>
                   <p>#2341</p>
@@ -254,8 +258,8 @@ export default function Home() {
                 <div onClick={() => handleSelect(3)} id={`${selected[3]? styles.selected : styles.unselected }`}> 4</div>
                 <div onClick={() => handleSelect(4)} id={`${selected[4]? styles.selected : styles.unselected }`}> 5</div>
               </div>
-              <div className={styles.result}>{0.11 * (selected.indexOf(true)+1)}ETH <span>/ 1 Rocketie</span></div>
-              <p>Limit of 5 Rocketie per user on launch.</p>
+              <div className={styles.result}>{0.64 * (selected.indexOf(true)+1)}ETH <span>/ 1 Rocketie</span></div>
+              <p>Limit of 8 Rocketie per user on launch.</p>
               <div className={styles.emptyHeight2}></div>
               <button>Mint Now</button>            
             </div>
