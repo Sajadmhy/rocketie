@@ -283,7 +283,7 @@
 /* roadmap section */
 
 .roadmap {
-    padding: 4rem 215px;
+    padding: 2rem 215px 5rem 215px;
     color: white;
     position: relative;
     background-image: url("/roadmap-bg.webp");
@@ -292,6 +292,7 @@
     background-position: center;
     text-align: center;
     position: relative;
+
 }
 
 .roadmap h2 {
@@ -331,6 +332,7 @@
     display: flex;
     justify-content: center;
     gap: 0.5rem;
+    z-index: 100;
 }
 
 .roadmapBtns button {
@@ -371,10 +373,10 @@
 
 .ellipse3 {
     position: absolute;
-    top: -160px !important;
+    top: -80px !important;
     right: 0;
     width: 100vw;
-    height: 190px;
+    height: 120px;
     background-image: url("/Ellipse3.png");
     background-repeat: no-repeat;
     background-size: cover;
