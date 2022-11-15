@@ -238,6 +238,7 @@
     font-weight: 800;
 }
 
+
 .shape1 p {
     position: absolute;
     font-size: 13px;
@@ -247,6 +248,10 @@
     font-family: "clash display";
     text-align: left;
     left: 30px;
+}
+
+.darker{
+    color: rgba(255, 255, 255,0.7);
 }
 
 
@@ -260,7 +265,7 @@
     width: 210px;
 }
 
-.shape2 h3 img {
+.shape2 h3 svg {
     position: absolute;
     left: 183px;
 }
@@ -291,7 +296,7 @@
     width: 210px;
 }
 
-.shape3 h3 img {
+.shape3 h3 svg {
     position: absolute;
     left: 163px;
 }
@@ -324,7 +329,7 @@
     width: 210px;
 }
 
-.shape4 h3 img {
+.shape4 h3 svg {
     position: absolute;
     left: 73px;
 }
@@ -356,7 +361,7 @@
     width: 210px;
 }
 
-.shape5 h3 img {
+.shape5 h3 svg {
     position: absolute;
     left: 92px;
 }
@@ -390,7 +395,7 @@
     width: 160px;
 }
 
-.shape6 h3 img {
+.shape6 h3 svg {
     position: absolute;
     left: 165px;
 }
@@ -402,7 +407,7 @@
 .shape6 p {
     position: absolute;
     font-size: 13px;
-    top: 0px;
+    top: 10px;
     color: white;
     line-height: 16px;
     font-family: "clash display";
@@ -424,7 +429,7 @@
     width: 160px;
 }
 
-.shape7 h3 img {
+.shape7 h3 svg {
     position: absolute;
     left: 180px;
 }
@@ -436,11 +441,23 @@
 .shape7 p {
     position: absolute;
     font-size: 13px;
-    top: 43px;
+    top: 38px;
     color: white;
     line-height: 16px;
     font-family: "clash display";
     text-align: left;
     left: 21px;
     width: 220px;
+}
+
+
+.container p {
+    z-index: 1;
+    opacity:0.5;
+    cursor: default;
+}
+
+.container p:hover {
+    opacity: 1;
+    transition: 0.4s;
 }
