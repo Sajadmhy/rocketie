@@ -238,6 +238,108 @@ export default function Home() {
                   <div><Image src="/member3.png" width={54} height={54} alt="team member"/></div>
                 </div>
                 <div className={styles.cardText}>
+                  <p>Investor & Founder of x</p>
+                  <h3>Michal
+                  <span></span></h3>
+                </div>
+                <div className={styles.tags}>
+                  <p>#2341</p>
+                  <Image src="/Rocketie.png" width={59} height={59} alt="rocketie"/>
+                </div>
+              </div>
+
+              <div className={styles.teamCard}>
+                <div className={styles.cardHead}><Image src="/card-header.png" width={300} height={70} alt="team member"/></div>
+                <div className={styles.profilePlaceholder}>
+                  <div className={styles.overlay}></div>
+                  <div><Image src="/member3.png" width={54} height={54} alt="team member"/></div>
+                </div>
+                <div className={styles.cardText}>
+                  <p>Investor & Founder of x</p>
+                  <h3>Radek
+                  <span></span></h3>
+                </div>
+                <div className={styles.tags}>
+                  <p>#2341</p>
+                  <Image src="/Rocketie.png" width={59} height={59} alt="rocketie"/>
+                </div>
+              </div>
+
+              <div className={styles.teamCard}>
+                <div className={styles.cardHead}><Image src="/card-header.png" width={300} height={70} alt="team member"/></div>
+                <div className={styles.profilePlaceholder}>
+                  <div className={styles.overlay}></div>
+                  <div><Image src="/member3.png" width={54} height={54} alt="team member"/></div>
+                </div>
+                <div className={styles.cardText}>
+                  <p>Advisor</p>
+                  <h3>Alex
+                  <span></span></h3>
+                </div>
+                <div className={styles.tags}>
+                  <p>#2341</p>
+                  <Image src="/Rocketie.png" width={59} height={59} alt="rocketie"/>
+                </div>
+              </div>
+
+              <div className={styles.teamCard}>
+                <div className={styles.cardHead}><Image src="/card-header.png" width={300} height={70} alt="team member"/></div>
+                <div className={styles.profilePlaceholder}>
+                  <div className={styles.overlay}></div>
+                  <div><Image src="/member3.png" width={54} height={54} alt="team member"/></div>
+                </div>
+                <div className={styles.cardText}>
+                  <p>Main Artist</p>
+                  <h3>Kay
+                  <span></span></h3>
+                </div>
+                <div className={styles.tags}>
+                  <p>#2341</p>
+                  <Image src="/Rocketie.png" width={59} height={59} alt="rocketie"/>
+                </div>
+              </div>
+
+              <div className={styles.teamCard}>
+                <div className={styles.cardHead}><Image src="/card-header.png" width={300} height={70} alt="team member"/></div>
+                <div className={styles.profilePlaceholder}>
+                  <div className={styles.overlay}></div>
+                  <div><Image src="/member3.png" width={54} height={54} alt="team member"/></div>
+                </div>
+                <div className={styles.cardText}>
+                  <p>Main Developer</p>
+                  <h3>Ondra
+                  <span></span></h3>
+                </div>
+                <div className={styles.tags}>
+                  <p>#2341</p>
+                  <Image src="/Rocketie.png" width={59} height={59} alt="rocketie"/>
+                </div>
+              </div>
+
+              <div className={styles.teamCard}>
+                <div className={styles.cardHead}><Image src="/card-header.png" width={300} height={70} alt="team member"/></div>
+                <div className={styles.profilePlaceholder}>
+                  <div className={styles.overlay}></div>
+                  <div><Image src="/member3.png" width={54} height={54} alt="team member"/></div>
+                </div>
+                <div className={styles.cardText}>
+                  <p>Smart Contract Developer</p>
+                  <h3>Martin
+                  <span></span></h3>
+                </div>
+                <div className={styles.tags}>
+                  <p>#2341</p>
+                  <Image src="/Rocketie.png" width={59} height={59} alt="rocketie"/>
+                </div>
+              </div>
+
+              <div className={styles.teamCard}>
+                <div className={styles.cardHead}><Image src="/card-header.png" width={300} height={70} alt="team member"/></div>
+                <div className={styles.profilePlaceholder}>
+                  <div className={styles.overlay}></div>
+                  <div><Image src="/member3.png" width={54} height={54} alt="team member"/></div>
+                </div>
+                <div className={styles.cardText}>
                   <p>Head of Marketing</p>
                   <h3>Enrico Miller <span></span><a className={styles.twitter}></a><a className={styles.linkedin}></a></h3>
                 </div>
