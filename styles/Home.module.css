@@ -742,11 +742,17 @@
     bottom: -105px;
     right: 401px;
 }
-
+.roadmapMobile {
+    display: none;
+}
 
 @media screen and (max-width: 1100px) {
     .roadmapDesktop {
         display: none;
+    }
+
+    .roadmapMobile {
+        display: block;
     }
 
     .smallRoadmap {

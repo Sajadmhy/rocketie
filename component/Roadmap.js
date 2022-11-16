@@ -1,9 +1,10 @@
 import styles from "../styles/Roadmap.module.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 
 export default function Roadmap() {
     const [isHovered, setHover] = useState([false, false,false,false, false,false,false]);
+
 
     const hoverIn = (index) => {
         const newHove = [...isHovered];
@@ -16,7 +17,7 @@ export default function Roadmap() {
 
 
     return (
-        <div className={styles.container}>
+        <div className={styles.container} >
             
             <div className={styles.shape1} onMouseEnter={()=> hoverIn(0)} onMouseLeave={() => hoverOut() }>
                 <h3><span>1</span><span>Browser Launch</span>

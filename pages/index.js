@@ -6,7 +6,7 @@ import Aos from 'aos';
 import 'aos/dist/aos.css';
 import Orbit from '../component/Orbit';
 import Roadmap from '../component/Roadmap';
-
+import RoadmapMobile from '../component/RoadmapMobile';
 
 export default function Home() {
 
@@ -116,7 +116,8 @@ export default function Home() {
             <div className={styles.emptyHeight}>
               <div className={styles.roadmapDesktop}><Roadmap /></div>
               {/* <div className={styles.bigRoadmap}></div> */}
-              <div className={styles.smallRoadmap}></div>
+              <div className={styles.roadmapMobile}><RoadmapMobile /></div>
+              {/* <div className={styles.smallRoadmap}></div> */}
             </div>
             <div className={styles.roadmapBtns}>
               <button>Play now</button>
