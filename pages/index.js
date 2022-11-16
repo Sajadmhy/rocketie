@@ -29,6 +29,8 @@ export default function Home() {
   const [nft4Enter, setNft4] = useState(false);
   const [nft5Enter, setNft5] = useState(false);
 
+  const [openseaIsHovered, setOpensea] = useState(false);
+
   const handleSelect = (index) => {
     const newSelected = [false, false, false, false, false];
     newSelected[index] = true;
@@ -66,7 +68,7 @@ export default function Home() {
       targetOpacity={0.5}
       targetScale={2.8}
     />
-  </div>
+     </div>
 
       <main className={styles.container}>
         <div className={styles.heroBG}>
@@ -74,7 +76,7 @@ export default function Home() {
           <div className={styles.card2}><img src="/card2.png" alt="card" /></div>
           <div className={styles.card2Mobile}><img src="/card2-mobile.png" alt="card" /></div>
           <nav className={styles.nav}>
-            <Image src="/logo.png" height={75} width={75} alt="logo" />
+            <div className={styles.logo}><Image src="/logo.png" height={75} width={75} alt="logo" /></div>
             <ul>
               <li>Home</li>
               <li>Info</li>
@@ -83,7 +85,7 @@ export default function Home() {
               <li>Mint</li>
             </ul>
             <div className={styles.navEnd}>
-              <div className={styles.openSea}><Image src="/opensea.png" width={18} height={18} alt="opensea logo" /></div>
+              <a href='#'><div onMouseEnter={() => setOpensea(true)} onMouseLeave={() => setOpensea(false)} className={styles.openSea}><Image src={openseaIsHovered? "/opensea-blue.png" : "/opensea.png"} width={18} height={18} alt="opensea logo" /></div></a>
               <div className={styles.appUpMobile}>
                 <Image src="/app-store.png" width={121} height={35.85} alt="download from app store"/>
               </div>
@@ -202,7 +204,8 @@ export default function Home() {
                 <div className={styles.cardText}>
                   <p>Co-Founder</p>
                   <h3>Marek Fröhlich
-<span></span><Image src="/instagram.svg" height={13} width={14} alt="instagram icon"/></h3>
+                <span></span><a className={styles.instagram}>
+                  </a></h3>
                 </div>
                 <div className={styles.tags}>
                   <p>#2341</p>
@@ -219,7 +222,8 @@ export default function Home() {
                 <div className={styles.cardText}>
                   <p>Co-Founder</p>
                   <h3>František Henyš
-                  <span></span><Image src="/instagram.svg" height={13} width={14} alt="instagram icon"/></h3>
+                  <span></span><a className={styles.instagram}>
+                  </a></h3>
                 </div>
                 <div className={styles.tags}>
                   <p>#2341</p>
@@ -235,7 +239,7 @@ export default function Home() {
                 </div>
                 <div className={styles.cardText}>
                   <p>Head of Marketing</p>
-                  <h3>Enrico Miller <span></span><Image src="/twitter.svg" height={13} width={16} alt="twitter icon"/><Image src="/linkedin.svg" height={13} width={14} alt="linkedin icon"/></h3>
+                  <h3>Enrico Miller <span></span><a className={styles.twitter}></a><a className={styles.linkedin}></a></h3>
                 </div>
                 <div className={styles.tags}>
                   <p>#2341</p>
@@ -251,7 +255,8 @@ export default function Home() {
                 </div>
                 <div className={styles.cardText}>
                   <p>Head of Blockchain Strategy</p>
-                  <h3>Joseph Moulton <span></span><Image src="/instagram.svg" height={13} width={16} alt="instagram icon"/><Image src="/linkedin.svg" height={13} width={14} alt="linkedin icon"/></h3>
+                  <h3>Joseph Moulton <span></span><a className={styles.instagram}>
+                  </a><a className={styles.linkedin}></a></h3>
                 </div>
                 <div className={styles.tags}>
                   <p>#2341</p>
@@ -267,7 +272,7 @@ export default function Home() {
 
                 <div className={styles.cardText}>
                   <p>Marketing Strategist</p>
-                  <h3>Daniel Zad <span></span><Image src="/twitter.svg" height={13} width={16} alt="twitter icon"/><Image src="/linkedin.svg" height={13} width={14} alt="linkedin icon"/></h3>
+                  <h3>Daniel Zad <span></span><a className={styles.twitter}></a><a className={styles.linkedin}></a></h3>
                 </div>
                 <div className={styles.tags}>
                   <p>#2341</p>
@@ -283,7 +288,7 @@ export default function Home() {
                 </div>
                 <div className={styles.cardText}>
                   <p>Blockchain Strategist</p>
-                  <h3>Kwesi Ashante <span></span><Image src="/twitter.svg" height={13} width={16} alt="twitter icon"/><Image src="/linkedin.svg" height={13} width={14} alt="linkedin icon"/></h3>
+                  <h3>Kwesi Ashante <span></span><a className={styles.twitter}></a><a className={styles.linkedin}></a></h3>
                 </div>
                 <div className={styles.tags}>
                   <p>#2341</p>
@@ -315,11 +320,11 @@ export default function Home() {
               <button>Connect Wallet</button>
               <p>How many do you want?</p>
               <div className={styles.selection}>
-                <div onClick={() => handleSelect(0)} id={`${selected[0]? styles.selected : styles.unselected }`}> 1</div>
-                <div onClick={() => handleSelect(1)} id={`${selected[1]? styles.selected : styles.unselected }`}> 2</div>
-                <div onClick={() => handleSelect(2)} id={`${selected[2]? styles.selected : styles.unselected }`}> 3</div>
-                <div onClick={() => handleSelect(3)} id={`${selected[3]? styles.selected : styles.unselected }`}> 4</div>
-                <div onClick={() => handleSelect(4)} id={`${selected[4]? styles.selected : styles.unselected }`}> 5</div>
+                <li onClick={() => handleSelect(0)} id={`${selected[0]? styles.selected : styles.unselected }`}> 1</li>
+                <li onClick={() => handleSelect(1)} id={`${selected[1]? styles.selected : styles.unselected }`}> 2</li>
+                <li onClick={() => handleSelect(2)} id={`${selected[2]? styles.selected : styles.unselected }`}> 3</li>
+                <li onClick={() => handleSelect(3)} id={`${selected[3]? styles.selected : styles.unselected }`}> 4</li>
+                <li onClick={() => handleSelect(4)} id={`${selected[4]? styles.selected : styles.unselected }`}> 5</li>
               </div>
               <div className={styles.result}>{0.64 * (selected.indexOf(true)+1)}ETH <span>/ 1 Rocketie</span></div>
               <p>Limit of 8 Rocketie per user on launch.</p>

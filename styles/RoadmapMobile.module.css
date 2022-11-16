@@ -516,7 +516,43 @@
     cursor: default;
 }
 
-.container p:hover {
+.shape1:hover p{
+    opacity: 1;
+    transition: 0.4s;
+    cursor: none;
+}
+
+.shape2:hover p{
+    opacity: 1;
+    transition: 0.4s;
+    cursor: none;
+}
+
+.shape3:hover p{
+    opacity: 1;
+    transition: 0.4s;
+    cursor: none;
+}
+
+.shape4:hover p{
+    opacity: 1;
+    transition: 0.4s;
+    cursor: none;
+}
+
+.shape5:hover p{
+    opacity: 1;
+    transition: 0.4s;
+    cursor: none;
+}
+
+.shape6:hover p{
+    opacity: 1;
+    transition: 0.4s;
+    cursor: none;
+}
+
+.shape7:hover p{
     opacity: 1;
     transition: 0.4s;
     cursor: none;

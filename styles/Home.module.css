@@ -23,6 +23,14 @@
     z-index: -100;
 }
 
+.logo {
+    transition: 0.4s;
+}
+
+.logo:hover {
+    scale: 1.2;
+}
+
 .card2 img {
     position: absolute;
     rotate: -13.42deg;
@@ -55,6 +63,11 @@
     cursor: none;
 }
 
+.nav li:hover {
+    color: #39BEF0;
+}
+
+
 .navEnd {
     display: flex;
     gap: 1.5rem;
@@ -67,18 +80,18 @@
 
 .nav button {
     color: white;
-    background-color: transparent;;
-    border: solid 1px rgb(134, 134, 134);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.0384) 0%, rgba(255, 255, 255, 0.06) 100%);
+    border: 0.7px solid #FFFFFF;
+    border-radius: 7px;
     padding: 0.6rem 1.5rem;
-    border-radius: 5px;
     font-weight: bold;
     font-size: 14px;
     cursor: none;
 }
 
 .nav button:hover {
-    background-color: #39BEF0;
-    border: solid 1px #39BEF0;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.212) 0%, rgba(255, 255, 255, 0.096) 100%);
+    border: 0.7px solid #FFFFFF;
     transition: 0.4s;
 }
 
@@ -138,9 +151,15 @@
 }
 
 .hero button:nth-of-type(2) {
-    background-color: transparent;
+    background-color:#121318;
     border: solid 1px white;
 }
+
+.hero button:nth-of-type(2):hover {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.212) 0%, rgba(255, 255, 255, 0.096) 100%);
+    border: solid 1px white;
+}
+
 
 .appUpMobile {
     display: none;
@@ -285,24 +304,13 @@
     font-size: 14px;
 }
 
-.ellipse2 {
-    position: absolute;
-    top: -20px;
-    right: 0;
-    width: 1621px;
-    height: 190px;
-    background-image: url("/Ellipse2.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    z-index: 100;
-}
+
 
 
 /* roadmap section */
 
 .roadmap {
-    padding: 2rem 215px 5rem 215px;
+    padding: 4rem 215px 5rem 215px;
     color: white;
     position: relative;
     background-image: url("/roadmap-bg.webp");
@@ -312,6 +320,19 @@
     text-align: center;
     position: relative;
 
+}
+
+.ellipse2 {
+    position: absolute;
+    top: -20px;
+    right: 0;
+    width: 100%;
+    height: 190px;
+    background-image: url("/Ellipse2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 100;
 }
 
 .roadmap h2 {
@@ -425,9 +446,16 @@
 .teamCard {
     padding: 0.7rem;
     background-color: #101219;
-    border-radius: 7px;
+    border-radius: 10px;
     height: 160px;
     position: relative;
+    width: 328px;
+    transition:0.5s;
+}
+
+.teamCard:hover {
+    border: 0.8px solid #FFFFFF;
+    border-radius: 10px;
 }
 
 .cardHead {
@@ -483,6 +511,45 @@
 
 .cardText span {
     flex-grow: 1;
+}
+
+.instagram {
+    width: 16px;
+    height: 13px;
+    background-image: url("/instagram.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.instagram:hover {
+    background-image: url("/instagram-hover.svg");
+    transition: 0.3s;
+}
+
+.linkedin {
+    width: 16px;
+    height: 13px;
+    background-image: url("/linkedin.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.linkedin:hover {
+    background-image: url("/linkedin-hover.svg");
+    transition: 0.3s;
+}
+
+.twitter {
+    width: 16px;
+    height: 13px;
+    background-image: url("/twitter.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.twitter:hover {
+    background-image: url("/twitter-hover.svg");
+    transition: 0.3s;
 }
 
 .tags {
@@ -609,6 +676,10 @@
     padding: 1rem 1.5rem;
 }
 
+.bannerText button:first-of-type:hover {
+    background: #363945;
+}
+
 .bannerText button:nth-of-type(2) {
     background-color: #39BEF0;
 }
@@ -633,15 +704,20 @@
     margin-bottom: 2rem;
 }
 
-.selection div {
+.selection li {
     background-color: #181B23;
     padding: 0.8rem 1.3rem;
     border-radius: 7px;
     font-weight: bold;
     font-size: 19px;
+    list-style-type: none;
     border: none;
     color: white;
     cursor: none;
+}
+
+.selection li:hover {
+    background-color: #242630;
 }
 
 #selected {
