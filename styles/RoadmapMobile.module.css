@@ -7,6 +7,7 @@
     left: 50%;
     transform: translateX(-49%); 
     scale: 0.65;
+    cursor: none;
 }
 
 .shape1 {
@@ -518,4 +519,5 @@
 .container p:hover {
     opacity: 1;
     transition: 0.4s;
+    cursor: none;
 }

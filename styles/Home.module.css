@@ -52,7 +52,7 @@
 }
 
 .nav li {
-    cursor: pointer;
+    cursor: none;
 }
 
 .navEnd {
@@ -62,7 +62,7 @@
 }
 
 .navEnd img {
-    cursor: pointer;
+    cursor: none;
 }
 
 .nav button {
@@ -73,7 +73,7 @@
     border-radius: 5px;
     font-weight: bold;
     font-size: 14px;
-    cursor: pointer;
+    cursor: none;
 }
 
 .nav button:hover {
@@ -123,7 +123,7 @@
 
 .heroBtns button {
     z-index: 1;
-    cursor: pointer;
+    cursor: none;
     color: white;
     padding: 0.8rem 2rem;
     border-radius: 7px;
@@ -156,7 +156,7 @@
 }
 
 .appUp img {
-    cursor: pointer;
+    cursor: none;
 }
 
 .ellipse {
@@ -205,12 +205,32 @@
 }
 
 .nftCards button {
-    cursor: pointer;
+    cursor: none;
     font-size: 14px;
 }
 
 .nftCard1 {
     height: 280px;
+}
+
+.nftCard1:hover p {
+    color: #39BEF0;
+}
+
+.nftCard2:hover p {
+    color: #39BEF0;
+}
+
+.nftCard3:hover p {
+    color: #39BEF0;
+}
+
+.nftCard4:hover p {
+    color: #39BEF0;
+}
+
+.nftCard5:hover p {
+    color: #39BEF0;
 }
 
 .nftCard3 {
@@ -245,8 +265,10 @@
 }
 
 .nftSection p {
-    color:#39BEF0;
+    color:#25343A;
     font-size: 12px;
+    transition: 0.3s;
+
 }
 
 .nftSection button {
@@ -333,7 +355,7 @@
 }
 
 .roadmapBtns button {
-    cursor: pointer;
+    cursor: none;
     z-index: 100;
     font-size: 14px;
 }
@@ -456,7 +478,7 @@
 }
 
 .cardText h3 img {
-    cursor: pointer;
+    cursor: none;
 }
 
 .cardText span {
@@ -572,7 +594,7 @@
 }
 
 .bannerText button {
-    cursor: pointer;
+    cursor: none;
     padding: 0.7rem 1.5rem;
     border-radius: 7px;
     font-weight: 600;
@@ -619,7 +641,7 @@
     font-size: 19px;
     border: none;
     color: white;
-    cursor: pointer;
+    cursor: none;
 }
 
 #selected {
@@ -693,7 +715,7 @@
 
 .footerLinks ul li {
     width: fit-content;
-    cursor: pointer;
+    cursor: none;
 }
 
 .footer span {
@@ -708,7 +730,7 @@
 }
 
 .socialLinks img {
-    cursor: pointer;
+    cursor: none;
 }
 
 .app {
@@ -729,12 +751,12 @@
     color: white;
     margin-bottom: 2rem;
     border: 1px solid white;
-    cursor: pointer;
+    cursor: none;
     z-index: 10;
 }
 
 .app img {
-    cursor: pointer;
+    cursor: none;
 }
 
 .orbit2 {

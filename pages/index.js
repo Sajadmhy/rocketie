@@ -1,27 +1,46 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import Orbit from '../component/Orbit';
 import Roadmap from '../component/Roadmap';
 import RoadmapMobile from '../component/RoadmapMobile';
+import CustomCursor from 'custom-cursor-react';
+import 'custom-cursor-react/dist/index.css';
 
 export default function Home() {
-
   // initialize aos
   useEffect(() => {
     Aos.init({ duration: 1000 });
   }, []);
 
-
   const [selected, setSelected] = useState([true, false, false, false, false]);
-  
+  const [nft1Position, setNft1Position] = useState({ x: 0, y: 0 });
+  const [nft2Position, setNft2Position] = useState({ x: 0, y: 0 });
+  const [nft3Position, setNft3Position] = useState({ x: 0, y: 0 });
+  const [nft4Position, setNft4Position] = useState({ x: 0, y: 0 });
+  const [nft5Position, setNft5Position] = useState({ x: 0, y: 0 });
+
+  const [nft1Enter, setNft1] = useState(false);
+  const [nft2Enter, setNft2] = useState(false);
+  const [nft3Enter, setNft3] = useState(false);
+  const [nft4Enter, setNft4] = useState(false);
+  const [nft5Enter, setNft5] = useState(false);
+
   const handleSelect = (index) => {
     const newSelected = [false, false, false, false, false];
     newSelected[index] = true;
     setSelected(newSelected);
+  }
+
+  const handleMouseEnter = (e) => {
+      setNft1Position({ x: e.clientX, y: e.clientY });
+      setNft2Position({ x: e.clientX, y: e.clientY });
+      setNft3Position({ x: e.clientX, y: e.clientY });
+      setNft4Position({ x: e.clientX, y: e.clientY });
+      setNft5Position({ x: e.clientX, y: e.clientY });
   }
 
 
@@ -32,6 +51,23 @@ export default function Home() {
         <meta name="description" content="Rocketie website" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      <div>
+    <CustomCursor
+      targets={['button', 'li', 'a']}
+      customClass='custom-cursor'
+      dimensions={25}
+      fill='rgba(255, 255, 255, 0.19)'
+      smoothness={{
+        movement: 0.2,
+        scale: 0.05,
+        opacity: 0.2,
+      }}
+      targetOpacity={0.5}
+      targetScale={2.8}
+    />
+  </div>
+
       <main className={styles.container}>
         <div className={styles.heroBG}>
           <div className={styles.orbit1}><Orbit/></div>
@@ -78,27 +114,50 @@ export default function Home() {
         <div className={styles.nftSection}>
           <h2>Play and earn collectible <div>items and NFTs</div></h2>
           <div data-aos="fade-right" className={styles.nftCards}>
-            <div className={styles.nftCard1}>
+            <div onMouseEnter={()=> setNft1(true)} onMouseLeave={() => setNft1(false)}
+            style={{transform: nft1Enter ? `translate(${(nft1Position.x/40)-8}px,${(nft1Position.y/40)-15}px)` : 'translate(0,0)', 
+          transition: "0.1s"}} 
+            onMouseMove={handleMouseEnter} className={styles.nftCard1} >
               <Image src="/nft1.png" width={150} height={150} alt="nft card"/>
               <h3><div>0.64ETH &nbsp; <span>| &nbsp; $800</span></div> <Image src="/opensea.png" width={18} height={18} alt="nft card title"/></h3>
               <p>&quot;MOONBEAM 3000&quot;</p>
             </div>
-            <div className={styles.nftCard2}>
+            <div 
+            onMouseEnter={()=> setNft2(true)} onMouseLeave={() => setNft2(false)}
+            style={{transform: nft2Enter ? `translate(${(nft1Position.x/40)-12}px,${(nft1Position.y/40)-15}px)` : 'translate(0,0)', 
+          transition: "0.1s"}} 
+            onMouseMove={handleMouseEnter}
+            className={styles.nftCard2}>
               <Image src="/nft2.png" width={150} height={150} alt="nft card"/>
               <h3><div>0.64ETH &nbsp; <span>| &nbsp; $800</span></div> <Image src="/opensea.png" width={18} height={18} alt="nft card title"/></h3>
               <p>&quot;MOONBEAM 3000&quot;</p>
             </div>
-            <div className={styles.nftCard3}>
+            <div 
+            onMouseEnter={()=> setNft3(true)} onMouseLeave={() => setNft3(false)}
+            style={{transform: nft3Enter ? `translate(${(nft1Position.x/40)-15}px,${(nft1Position.y/40)-15}px)` : 'translate(0,0)', 
+          transition: "0.1s"}} 
+            onMouseMove={handleMouseEnter}
+            className={styles.nftCard3}>
               <Image src="/nft3.png" width={150} height={150} alt="nft card"/>
               <h3><div>0.64ETH &nbsp; <span>| &nbsp; $800</span></div> <Image src="/opensea.png" width={18} height={18} alt="nft card title"/></h3>
               <p>&quot;MOONBEAM 3000&quot;</p>
             </div>
-            <div className={styles.nftCard4}>
+            <div 
+            onMouseEnter={()=> setNft4(true)} onMouseLeave={() => setNft4(false)}
+            style={{transform: nft4Enter ? `translate(${(nft1Position.x/40)-20}px,${(nft1Position.y/40)-15}px)` : 'translate(0,0)', 
+          transition: "0.1s"}} 
+            onMouseMove={handleMouseEnter}
+            className={styles.nftCard4}>
               <Image src="/nft4.png" width={150} height={150} alt="nft card"/>
               <h3><div>0.64ETH &nbsp; <span>| &nbsp; $800</span></div> <Image src="/opensea.png" width={18} height={18} alt="nft card title"/></h3>
               <p>&quot;MOONBEAM 3000&quot;</p>
             </div>
-            <div className={styles.nftCard5}>
+            <div 
+            onMouseEnter={()=> setNft5(true)} onMouseLeave={() => setNft5(false)}
+            style={{transform: nft5Enter ? `translate(${(nft1Position.x/40)-25}px,${(nft1Position.y/40)-15}px)` : 'translate(0,0)', 
+          transition: "0.1s"}} 
+            onMouseMove={handleMouseEnter}
+            className={styles.nftCard5}>
               <Image src="/nft5.png" width={150} height={150} alt="nft card"/>
               <h3><div>0.64ETH &nbsp; <span>| &nbsp; $800</span></div> <Image src="/opensea.png" width={18} height={18} alt="nft card title"/></h3>
               <p>&quot;MOONBEAM 3000&quot;</p>
@@ -310,14 +369,14 @@ export default function Home() {
         </div> 
         <span></span>
         <div className={styles.socialLinks}>
-          <Image src="/discord.svg" height={16} width={19} alt="discord icon"/>
-          <Image src="/twitter-white.svg" height={16} width={19} alt="twitter icon"/>
-          <Image src="/opensea.svg" height={18} width={18} alt="opensea icon"/>
+          <a><Image src="/discord.svg" height={16} width={19} alt="discord icon"/></a>
+          <a><Image src="/twitter-white.svg" height={16} width={19} alt="twitter icon"/></a>
+          <a><Image src="/opensea.svg" height={18} width={18} alt="opensea icon"/></a>
         </div>
         <div className={styles.app}>
           <button>Play now</button>
-          <Image src="/app-store.png" width={115} height={35} alt="download from app store"/>
-          <Image src="/google-play.png" width={132} height={51} alt="download from app store"/>
+          <a><Image src="/app-store.png" width={115} height={35} alt="download from app store"/></a>
+          <a><Image src="/google-play.png" width={132} height={51} alt="download from app store"/></a>
         </div>
         <div className={styles.orbit2}><Orbit/></div>
         </div>
