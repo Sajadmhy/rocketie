@@ -85,7 +85,7 @@ export default function Home() {
               <li>Mint</li>
             </ul>
             <div className={styles.navEnd}>
-              <a href='#'><div onMouseEnter={() => setOpensea(true)} onMouseLeave={() => setOpensea(false)} className={styles.openSea}><Image src={openseaIsHovered? "/opensea-blue.png" : "/opensea.png"} width={18} height={18} alt="opensea logo" /></div></a>
+            <a><div className={styles.openSeaFooter}></div></a>
               <div className={styles.appUpMobile}>
                 <Image src="/app-store.png" width={121} height={35.85} alt="download from app store"/>
               </div>
@@ -126,7 +126,7 @@ export default function Home() {
             </div>
             <div 
             onMouseEnter={()=> setNft2(true)} onMouseLeave={() => setNft2(false)}
-            style={{transform: nft2Enter ? `translate(${(nft1Position.x/40)-12}px,${(nft1Position.y/40)-15}px)` : 'translate(0,0)', 
+            style={{transform: nft2Enter ? `translate(${(nft2Position.x/40)-12}px,${(nft1Position.y/40)-15}px)` : 'translate(0,0)', 
           transition: "0.1s"}} 
             onMouseMove={handleMouseEnter}
             className={styles.nftCard2}>
@@ -136,7 +136,7 @@ export default function Home() {
             </div>
             <div 
             onMouseEnter={()=> setNft3(true)} onMouseLeave={() => setNft3(false)}
-            style={{transform: nft3Enter ? `translate(${(nft1Position.x/40)-15}px,${(nft1Position.y/40)-15}px)` : 'translate(0,0)', 
+            style={{transform: nft3Enter ? `translate(${(nft3Position.x/40)-15}px,${(nft1Position.y/40)-15}px)` : 'translate(0,0)', 
           transition: "0.1s"}} 
             onMouseMove={handleMouseEnter}
             className={styles.nftCard3}>
@@ -146,7 +146,7 @@ export default function Home() {
             </div>
             <div 
             onMouseEnter={()=> setNft4(true)} onMouseLeave={() => setNft4(false)}
-            style={{transform: nft4Enter ? `translate(${(nft1Position.x/40)-20}px,${(nft1Position.y/40)-15}px)` : 'translate(0,0)', 
+            style={{transform: nft4Enter ? `translate(${(nft4Position.x/40)-20}px,${(nft1Position.y/40)-15}px)` : 'translate(0,0)', 
           transition: "0.1s"}} 
             onMouseMove={handleMouseEnter}
             className={styles.nftCard4}>
@@ -156,7 +156,7 @@ export default function Home() {
             </div>
             <div 
             onMouseEnter={()=> setNft5(true)} onMouseLeave={() => setNft5(false)}
-            style={{transform: nft5Enter ? `translate(${(nft1Position.x/40)-25}px,${(nft1Position.y/40)-15}px)` : 'translate(0,0)', 
+            style={{transform: nft5Enter ? `translate(${(nft5Position.x/40)-25}px,${(nft1Position.y/40)-15}px)` : 'translate(0,0)', 
           transition: "0.1s"}} 
             onMouseMove={handleMouseEnter}
             className={styles.nftCard5}>
@@ -474,9 +474,9 @@ export default function Home() {
         </div> 
         <span></span>
         <div className={styles.socialLinks}>
-          <a><Image src="/discord.svg" height={16} width={19} alt="discord icon"/></a>
-          <a><Image src="/twitter-white.svg" height={16} width={19} alt="twitter icon"/></a>
-          <a><Image src="/opensea.svg" height={18} width={18} alt="opensea icon"/></a>
+          <a><div className={styles.twitterFooter}></div></a>
+          <a><div className={styles.discordFooter}></div></a>
+          <a><div className={styles.openSeaFooter}></div></a>
         </div>
         <div className={styles.app}>
           <button>Play now</button>
