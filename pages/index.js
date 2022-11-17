@@ -9,6 +9,7 @@ import Roadmap from '../component/Roadmap';
 import RoadmapMobile from '../component/RoadmapMobile';
 import CustomCursor from 'custom-cursor-react';
 import 'custom-cursor-react/dist/index.css';
+import "animate.css";
 
 export default function Home() {
   // initialize aos
@@ -73,8 +74,13 @@ export default function Home() {
       <main className={styles.container}>
         <div className={styles.heroBG}>
           <div className={styles.orbit1}><Orbit/></div>
-          <div className={styles.card2}><img src="/card2.png" alt="card" /></div>
-          <div className={styles.card2Mobile}><img src="/card2-mobile.png" alt="card" /></div>
+          <div className='animate__animated animate__fadeInRight'><div className={styles.card2}><img src="/card2.png" alt="card" /></div></div>
+          <div className='animate__animated animate__fadeInRight'><div className={styles.card2Mobile}><img src="/card2-mobile.png" alt="card" /></div></div>
+          <div className='animate__animated animate__fadeInRight'><div className={styles.card1Mobile}><img src="/card1-mobile.png" alt="card" /></div></div>
+          <div className='animate__animated animate__fadeInRight'><div className={styles.card3}><img src="/card3.png" alt="card" /></div></div>
+          <div className='animate__animated animate__fadeInRight'><div className={styles.card1}><img src="/card1.png" alt="card" /></div></div>
+
+
           <nav className={styles.nav}>
             <div className={styles.logo}><Image priority src="/logo.png" height={75} width={75} alt="logo" /></div>
             <ul>
@@ -94,14 +100,18 @@ export default function Home() {
           </nav>
 
           <div className={styles.hero}>
-            <h2 className={styles.header}>Creating fun games to wager crypto with 
-        <span className={styles.yourSkill}>&nbsp;your friends</span></h2>
-            <p className={styles.headerPara}>
+            <div className='animate__animated animate__fadeInLeft'><h2 className={styles.header}>Creating fun games to wager crypto with 
+        <span className={styles.yourSkill}>&nbsp;your friends</span></h2></div>
+            <div className='animate__animated animate__fadeInLeft'>
+              <p className={styles.headerPara}>
             Discover Rocketie studios with their first <span>exclusive NFT</span> release and have a say in a truly decentralised web3 game studio.
-            </p>
-            <div className={styles.heroBtns}>
-              <button>Play now</button>
-              <button>View NFTs</button>
+              </p>
+            </div>
+            <div className='animate__animated animate__fadeInLeft'>
+              <div className={styles.heroBtns}>
+                <button>Play now</button>
+                <button>View NFTs</button>
+              </div>
             </div>
           </div>
           

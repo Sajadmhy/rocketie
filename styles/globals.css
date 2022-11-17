@@ -26,3 +26,15 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.animate__fadeInRight {
+  position: relative;
+  top: 400px;
+}
+
+@media screen and (max-width:768px) {
+  .animate__fadeInRight {
+    position: relative;
+    top: 0;
+  } 
+}

@@ -31,6 +31,14 @@
     scale: 1.2;
 }
 
+.card1 img {
+    position: absolute;
+    rotate: -13.42deg;
+    top: -170px;
+    right: 20%;
+    z-index: 1;
+}
+
 .card2 img {
     position: absolute;
     rotate: -13.42deg;
@@ -39,7 +47,19 @@
     z-index: -1;
 }
 
+.card3 img {
+    position: absolute;
+    rotate: -13.42deg;
+    top: -100px;
+    right: 2%;
+    z-index: -3;
+}
+
 .card2Mobile {
+    display: none;
+}
+
+.card1Mobile {
     display: none;
 }
 
@@ -1080,12 +1100,26 @@
     .card2 {
         display: none;
     }
+    .card1 {
+        display: none;
+    }
+    .card3 {
+        display: none;
+    }
     
     .card2Mobile {
         display: block;
         position: absolute;
         top: 490px;
         right: 50%;
+        rotate: -13.42deg;
+    }
+
+    .card1Mobile {
+        display: block;
+        position: absolute;
+        top: 370px;
+        right: 5%;
         rotate: -13.42deg;
     }
 
@@ -1149,10 +1183,9 @@
     .heroBtns button {
         justify-content: center;
         margin-bottom: 0;
-        width: 92.52px;
-        height: 38px;
-        font-size: 12px;
-        padding:0 0;
+        width: 92.52px !important;
+        height: 38px !important;
+        font-size: 12px !important;
         margin: 0 auto;
     }
 
