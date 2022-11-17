@@ -56,7 +56,7 @@ export default function Home() {
 
       <div>
     <CustomCursor
-      targets={['button', 'li', 'a']}
+      targets={['button', 'li', 'a', '.opensea']}
       customClass='custom-cursor'
       dimensions={25}
       fill='rgba(255, 255, 255, 0.19)'
@@ -95,7 +95,7 @@ export default function Home() {
 
           <div className={styles.hero}>
             <h2 className={styles.header}>Creating fun games to wager crypto with 
-<span className={styles.yourSkill}>&nbsp;your friends</span></h2>
+        <span className={styles.yourSkill}>&nbsp;your friends</span></h2>
             <p className={styles.headerPara}>
             Discover Rocketie studios with their first <span>exclusive NFT</span> release and have a say in a truly decentralised web3 game studio.
             </p>
@@ -121,7 +121,7 @@ export default function Home() {
           transition: "0.1s"}} 
             onMouseMove={handleMouseEnter} className={styles.nftCard1} >
               <Image src="/nft1.png" width={150} height={150} alt="nft card"/>
-              <h3><div>0.64ETH &nbsp; <span>| &nbsp; $800</span></div> <Image src="/opensea.png" width={18} height={18} alt="nft card title"/></h3>
+              <h3><div>0.64ETH &nbsp; <span>| &nbsp; $800</span></div> <div className={styles.openSeaNFT}></div></h3>
               <p>&quot;MOONBEAM 3000&quot;</p>
             </div>
             <div 
@@ -131,7 +131,7 @@ export default function Home() {
             onMouseMove={handleMouseEnter}
             className={styles.nftCard2}>
               <Image src="/nft2.png" width={150} height={150} alt="nft card"/>
-              <h3><div>0.64ETH &nbsp; <span>| &nbsp; $800</span></div> <Image src="/opensea.png" width={18} height={18} alt="nft card title"/></h3>
+              <h3><div>0.64ETH &nbsp; <span>| &nbsp; $800</span></div> <div className={styles.openSeaNFT}></div></h3>
               <p>&quot;MOONBEAM 3000&quot;</p>
             </div>
             <div 
@@ -141,7 +141,7 @@ export default function Home() {
             onMouseMove={handleMouseEnter}
             className={styles.nftCard3}>
               <Image src="/nft3.png" width={150} height={150} alt="nft card"/>
-              <h3><div>0.64ETH &nbsp; <span>| &nbsp; $800</span></div> <Image src="/opensea.png" width={18} height={18} alt="nft card title"/></h3>
+              <h3><div>0.64ETH &nbsp; <span>| &nbsp; $800</span></div> <div className={styles.openSeaNFT}></div></h3>
               <p>&quot;MOONBEAM 3000&quot;</p>
             </div>
             <div 
@@ -151,7 +151,7 @@ export default function Home() {
             onMouseMove={handleMouseEnter}
             className={styles.nftCard4}>
               <Image src="/nft4.png" width={150} height={150} alt="nft card"/>
-              <h3><div>0.64ETH &nbsp; <span>| &nbsp; $800</span></div> <Image src="/opensea.png" width={18} height={18} alt="nft card title"/></h3>
+              <h3><div>0.64ETH &nbsp; <span>| &nbsp; $800</span></div> <div className={styles.openSeaNFT}></div></h3>
               <p>&quot;MOONBEAM 3000&quot;</p>
             </div>
             <div 
@@ -161,7 +161,7 @@ export default function Home() {
             onMouseMove={handleMouseEnter}
             className={styles.nftCard5}>
               <Image src="/nft5.png" width={150} height={150} alt="nft card"/>
-              <h3><div>0.64ETH &nbsp; <span>| &nbsp; $800</span></div> <Image src="/opensea.png" width={18} height={18} alt="nft card title"/></h3>
+              <h3><div>0.64ETH &nbsp; <span>| &nbsp; $800</span></div> <div className={styles.openSeaNFT}></div></h3>
               <p>&quot;MOONBEAM 3000&quot;</p>
             </div>
             <button>See All</button>

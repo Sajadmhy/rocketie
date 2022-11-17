@@ -309,7 +309,39 @@
     transition: 0.3s;
 }
 
+.openSeaNFT {
+    width: 18px;
+    height: 18px;
+    background-image: url("/opensea.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    transition: 0.4s;
+}
 
+.nftCard1:hover .openSeaNFT {
+    background-image: url("/opensea-hover.svg");
+    transition: 0.4s;
+}
+
+.nftCard2:hover .openSeaNFT {
+    background-image: url("/opensea-hover.svg");
+    transition: 0.4s;
+}
+
+.nftCard3:hover .openSeaNFT {
+    background-image: url("/opensea-hover.svg");
+    transition: 0.4s;
+}
+
+.nftCard4:hover .openSeaNFT {
+    background-image: url("/opensea-hover.svg");
+    transition: 0.4s;
+}
+
+.nftCard5:hover .openSeaNFT {
+    background-image: url("/opensea-hover.svg");
+    transition: 0.4s;
+}
 
 /* roadmap section */
 
