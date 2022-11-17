@@ -803,12 +803,23 @@
 .footerLinks ul li:first-child {
     margin-bottom: 0.5rem;
     font-size: 15px;
-    cursor:default;
+    cursor:none;
 }
+
+.footerLinks ul li:first-child:hover {
+    color: white;
+    cursor:none;
+}
+
 
 .footerLinks ul li {
     width: fit-content;
     cursor: none;
+}
+
+.footerLinks li:hover {
+    color: #39BEF0;
+    transition: 0.3s;
 }
 
 .footer span {
