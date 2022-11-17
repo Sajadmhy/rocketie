@@ -19,7 +19,7 @@
 .orbit1 {
     position: absolute;
     top: 248px;
-    left: 35%;
+    right: 48%;
     z-index: -100;
 }
 
