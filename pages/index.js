@@ -80,6 +80,9 @@ export default function Home() {
           <div className='animate__animated animate__fadeInRight'><div className={styles.card3}><img src="/card3.png" alt="card" /></div></div>
           <div className='animate__animated animate__fadeInRight'><div className={styles.card1}><img src="/card1.png" alt="card" /></div></div>
 
+          <div className={styles.rocket}><img src="/Rocket.svg" alt="card" /></div>
+          <div className={styles.rocketMobile}><img src="/Rocket-mobile.svg" alt="card" /></div>
+
 
           <nav className={styles.nav}>
             <div className={styles.logo}><Image priority src="/logo.png" height={75} width={75} alt="logo" /></div>
