@@ -651,7 +651,7 @@
 }
 
 .bannerText {
-    padding: 3rem 0;
+    padding: 38px 0;
     color: white;
     z-index: 200;
     position: absolute;
@@ -662,18 +662,17 @@
 
 .bannerText button {
     cursor: none;
-    padding: 0.7rem 1.5rem;
     border-radius: 7px;
     font-weight: 600;
     font-size: 14px;
     border: none;
     color: white;
-    margin-bottom: 2rem;
 }
 
 .bannerText button:first-of-type {
     background-color: #242630;
-    padding: 1rem 1.5rem;
+    width: 139px;
+    height: 42px;
 }
 
 .bannerText button:first-of-type:hover {
@@ -681,6 +680,9 @@
 }
 
 .bannerText button:nth-of-type(2) {
+    margin-top: 48px;
+    width: 114px;
+    height: 42px;
     background-color: #39BEF0;
 }
 
@@ -689,11 +691,15 @@
     font-size: 16px;
     font-weight: 500;
     font-family: "Clash Display";
-    margin: 1rem 0;
+}
+
+.bannerText p:nth-of-type(1) {
+    margin: 42px 0 14px 0;
 }
 
 .bannerText p:nth-of-type(2) {
-    opacity: 0.4;
+    opacity: 0.28;
+    font-size: 13px;
 }
  
 .selection {
@@ -1103,10 +1109,26 @@
         display: none;
     }
 
+    .bannerText {
+        padding: 30px 0;
+        color: white;
+        z-index: 200;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        text-align: center;
+    }
+
     .bannerText button:first-of-type {
         padding:0;
         width: 130px;
         height: 40px;
+    }
+
+    .bannerText button:nth-of-type(2) {
+        padding:0;
+        width: 92.52px;
+        height: 38px;
     }
 
     .bannerText button {
@@ -1127,7 +1149,7 @@
         margin-bottom: 1rem;
     }
     
-    .selection div {
+    .selection li {
         background-color: #181B23;
         padding: 0;
         width: 46px;

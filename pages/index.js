@@ -95,7 +95,7 @@ export default function Home() {
 
           <div className={styles.hero}>
             <h2 className={styles.header}>Creating fun games to wager crypto with 
-<span className={styles.yourSkill}>your friends</span></h2>
+<span className={styles.yourSkill}>&nbsp;your friends</span></h2>
             <p className={styles.headerPara}>
             Discover Rocketie studios with their first <span>exclusive NFT</span> release and have a say in a truly decentralised web3 game studio.
             </p>
