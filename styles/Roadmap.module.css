@@ -243,7 +243,7 @@
 .shape1 p {
     position: absolute;
     font-size: 13px;
-    top: 50px;
+    top: 40px;
     color: white;
     line-height: 16px;
     font-family: "clash display";
@@ -270,6 +270,7 @@
 .shape2 h3 svg {
     position: absolute;
     left: 183px;
+    bottom: -5px;
 }
 
 .shape2 h3 span:first-of-type {
@@ -279,7 +280,7 @@
 .shape2 p {
     position: absolute;
     font-size: 13px;
-    top: 46px;
+    top: 40px;
     color: white;
     line-height: 16px;
     font-family: "clash display";
@@ -302,6 +303,7 @@
 .shape3 h3 svg {
     position: absolute;
     left: 163px;
+    bottom: -8px;
 }
 
 .shape3 h3 span:first-of-type {
@@ -311,7 +313,7 @@
 .shape3 p {
     position: absolute;
     font-size: 13px;
-    top: 46px;
+    top: 40px;
     color: white;
     line-height: 16px;
     font-family: "clash display";
@@ -345,7 +347,7 @@
 .shape4 p {
     position: absolute;
     font-size: 13px;
-    top: 76px;
+    top: 70px;
     color: white;
     line-height: 16px;
     font-family: "clash display";
@@ -378,7 +380,7 @@
 .shape5 p {
     position: absolute;
     font-size: 13px;
-    top: 46px;
+    top: 40px;
     color: white;
     line-height: 16px;
     font-family: "clash display";
@@ -413,7 +415,7 @@
 .shape6 p {
     position: absolute;
     font-size: 13px;
-    top: 10px;
+    top: 5px;
     color: white;
     line-height: 16px;
     font-family: "clash display";
@@ -439,6 +441,7 @@
 .shape7 h3 svg {
     position: absolute;
     left: 180px;
+    top: -5px;
 }
 
 .shape7 h3 span:first-of-type {
@@ -448,7 +451,7 @@
 .shape7 p {
     position: absolute;
     font-size: 13px;
-    top: 38px;
+    top: 35px;
     color: white;
     line-height: 16px;
     font-family: "clash display";
