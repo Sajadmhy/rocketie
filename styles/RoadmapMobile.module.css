@@ -2,13 +2,15 @@
 .container {
     display: flex;
     gap: 20px;
-    top: 20px;
+    top: 120px;
     position: absolute;
     left: 50%;
-    transform: translateX(-49%); 
-    scale: 0.65;
+    transform: translateX(-22%); 
+    scale: 1;
     cursor: none;
 }
+
+
 
 .shape1 {
     border-style: solid;
@@ -556,4 +558,25 @@
     opacity: 1;
     transition: 0.4s;
     cursor: none;
+}
+
+
+@media screen and (max-width: 768px) {
+    .container{
+        top: 90px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-22%); 
+        scale: 1;
+    }
+}
+
+@media screen and (max-width: 610px) {
+    .container{
+        top: 10px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-49%); 
+        scale: 0.65;
+    }
 }

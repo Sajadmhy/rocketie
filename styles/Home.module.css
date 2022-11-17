@@ -460,6 +460,8 @@
     position: relative;
     width: 328px;
     transition:0.5s;
+    border: 0.8px solid transparent;
+
 }
 
 .teamCard:hover {
@@ -886,7 +888,7 @@
     }
 
     .emptyHeight {
-        height: 530px;
+        height: 780px;
     }
 }
 
@@ -1026,6 +1028,7 @@
         background-repeat: no-repeat;
         background-position: center;
     }
+
 
     .roadmap p {
         font-size: 10px;
@@ -1230,3 +1233,9 @@
     }
 }
     
+
+@media screen and (max-width: 610px) {
+    .emptyHeight {
+        height: 500px;
+    }
+}
