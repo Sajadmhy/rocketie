@@ -1311,4 +1311,8 @@
         position: relative;
         z-index: 200;
     }
+
+    .roadmap {
+        padding-top: 7rem;
+    }
 }
