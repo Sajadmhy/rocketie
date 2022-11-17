@@ -51,7 +51,7 @@ export default function Home() {
       <Head>
         <title>Rocketie</title>
         <meta name="description" content="Rocketie website" />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo.png" />
       </Head>
 
       <div>
@@ -76,7 +76,7 @@ export default function Home() {
           <div className={styles.card2}><img src="/card2.png" alt="card" /></div>
           <div className={styles.card2Mobile}><img src="/card2-mobile.png" alt="card" /></div>
           <nav className={styles.nav}>
-            <div className={styles.logo}><Image src="/logo.png" height={75} width={75} alt="logo" /></div>
+            <div className={styles.logo}><Image priority src="/logo.png" height={75} width={75} alt="logo" /></div>
             <ul>
               <li>Home</li>
               <li>Info</li>
@@ -87,7 +87,7 @@ export default function Home() {
             <div className={styles.navEnd}>
             <a><div className={styles.openSeaFooter}></div></a>
               <div className={styles.appUpMobile}>
-                <Image src="/app-store.png" width={121} height={35.85} alt="download from app store"/>
+                <Image priority src="/app-store.png" width={121} height={35.85} alt="download from app store"/>
               </div>
               <button>Play now</button>
             </div>
@@ -106,8 +106,8 @@ export default function Home() {
           </div>
           
           <div className={styles.appUp}>
-            <a href='#'><Image src="/app-store.png" width={101} height={30} alt="download from app store"/></a>
-            <a href='#'><Image src="/google-play.png" width={116} height={45} alt="download from app store"/></a>
+            <a href='#'><Image priority src="/app-store.png" width={101} height={30} alt="download from app store"/></a>
+            <a href='#'><Image priority src="/google-play.png" width={116} height={45} alt="download from app store"/></a>
           </div>
           <div className={styles.ellipse}>  
           </div>
