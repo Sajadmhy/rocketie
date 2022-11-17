@@ -249,6 +249,7 @@
     font-family: "clash display";
     text-align: left;
     left: 30px;
+    transition: 0.5s;
 }
 
 .darker{
@@ -284,6 +285,7 @@
     font-family: "clash display";
     text-align: left;
     left: 28px;
+    transition: 0.5s;
 }
 
 
@@ -315,6 +317,7 @@
     font-family: "clash display";
     text-align: left;
     left: 28px;
+    transition: 0.5s;
 }
 
 
@@ -349,6 +352,7 @@
     text-align: left;
     left: 21px;
     width: 110px;
+    transition: 0.5s;
 }
 
 .shape5 h3 {
@@ -381,6 +385,7 @@
     text-align: left;
     left: 21px;
     width: 320px;
+    transition: 0.5s;
 }
 
 
@@ -415,6 +420,7 @@
     text-align: left;
     left: 21px;
     width: 250px;
+    transition: 0.5s;
 }
 
 
@@ -449,6 +455,7 @@
     text-align: left;
     left: 21px;
     width: 220px;
+    transition: 0.5s;
 }
 
 
@@ -462,40 +469,47 @@
     opacity: 1;
     transition: 0.4s;
     cursor: none;
+    transition: 0.5s;
 }
 
 .shape2:hover p{
     opacity: 1;
     transition: 0.4s;
     cursor: none;
+    transition: 0.5s;
 }
 
 .shape3:hover p{
     opacity: 1;
     transition: 0.4s;
     cursor: none;
+    transition: 0.5s;
 }
 
 .shape4:hover p{
     opacity: 1;
     transition: 0.4s;
     cursor: none;
+    transition: 0.5s;
 }
 
 .shape5:hover p{
     opacity: 1;
     transition: 0.4s;
     cursor: none;
+    transition: 0.5s;
 }
 
 .shape6:hover p{
     opacity: 1;
     transition: 0.4s;
     cursor: none;
+    transition: 0.5s;
 }
 
 .shape7:hover p{
     opacity: 1;
     transition: 0.4s;
     cursor: none;
+    transition: 0.5s;
 }

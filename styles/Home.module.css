@@ -61,10 +61,12 @@
 
 .nav li {
     cursor: none;
+    transition: 0.5s;
 }
 
 .nav li:hover {
     color: #39BEF0;
+    transition: 0.5s;
 }
 
 
@@ -78,22 +80,39 @@
     cursor: none;
 }
 
-.nav button {
-    color: white;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.0384) 0%, rgba(255, 255, 255, 0.06) 100%);
-    border: 0.7px solid #FFFFFF;
-    border-radius: 7px;
-    padding: 0.6rem 1.5rem;
-    font-weight: bold;
-    font-size: 14px;
-    cursor: none;
-}
 
-.nav button:hover {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.212) 0%, rgba(255, 255, 255, 0.096) 100%);
+.nav button {
+    position: relative;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.0384) 0%, rgba(255, 255, 255, 0.06) 100%);
+    z-index: 1;
     border: 0.7px solid #FFFFFF;
-    transition: 0.4s;
-}
+    border-radius: 7px;    
+    width: 114px;
+    height: 42px;
+    font-weight: 600;
+    font-size: 14px;
+    color: white;
+    cursor: none;
+    font-family: "Clash Display";
+  }
+  
+  .nav button::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.212) 0%, rgba(255, 255, 255, 0.096) 100%);
+    z-index: -1;
+    transition: opacity 0.5s linear;
+    opacity: 0;
+  }
+  
+  .nav button:hover::before {
+    opacity: 1;
+  }
+
 
 .hero {
     color: white;
@@ -138,10 +157,12 @@
     z-index: 1;
     cursor: none;
     color: white;
-    padding: 0.8rem 2rem;
     border-radius: 7px;
-    font-weight: bold;
+    font-weight: 600;
     font-size: 14px;
+    font-family: "Clash Display";
+    width:114px;
+    height: 42px;
 }
 
 
@@ -150,7 +171,7 @@
     border: none;
 }
 
-.hero button:nth-of-type(2) {
+/* .hero button:nth-of-type(2) {
     background-color:#121318;
     border: solid 1px white;
 }
@@ -158,7 +179,39 @@
 .hero button:nth-of-type(2):hover {
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.212) 0%, rgba(255, 255, 255, 0.096) 100%);
     border: solid 1px white;
-}
+} */
+
+.hero button:nth-of-type(2) {
+    position: relative;
+    background:#121318;
+    z-index: 1;
+    border: 0.7px solid #FFFFFF;
+    border-radius: 7px;    
+    width: 114px;
+    height: 42px;
+    font-weight: 600;
+    font-size: 14px;
+    color: white;
+    cursor: none;
+    font-family: "Clash Display";
+  }
+  
+  .hero button:nth-of-type(2):before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.212) 0%, rgba(255, 255, 255, 0.096) 100%);
+    z-index: -1;
+    transition: opacity 0.5s linear;
+    opacity: 0;
+  }
+  
+  .hero button:nth-of-type(2):hover::before {
+    opacity: 1;
+  }
 
 
 .appUpMobile {
@@ -217,7 +270,7 @@
 
 .nftCards {
     display: flex;
-    gap: 1.5rem;
+    gap: 17px;
     margin-top: 2rem;
     /* height: 280px; */
     flex-wrap: wrap;
@@ -293,8 +346,8 @@
 
 .nftSection button {
     align-self: center;
-    margin-bottom: 10rem;
-    margin-left: 0.5rem;
+    margin-bottom: 7rem;
+    margin-left: 5px;
     color: white;
     opacity: 0.3;
     background-color: transparent;
@@ -303,11 +356,13 @@
     height: 42px;
     border-radius: 7px;
     font-size: 14px;
+    font-family: "Clash Display";
+    transition: 0.5s;
 }
 
 .nftSection button:hover {
     background-color: rgba(100, 100, 100, 0.3);
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 .openSeaNFT {
@@ -317,30 +372,31 @@
     background-repeat: no-repeat;
     background-size: contain;
     transition: 0.4s;
+    opacity: 0.4;
 }
 
 .nftCard1:hover .openSeaNFT {
-    background-image: url("/opensea-hover.svg");
+    opacity: 1;
     transition: 0.4s;
 }
 
 .nftCard2:hover .openSeaNFT {
-    background-image: url("/opensea-hover.svg");
+    opacity: 1;
     transition: 0.4s;
 }
 
 .nftCard3:hover .openSeaNFT {
-    background-image: url("/opensea-hover.svg");
+    opacity: 1;
     transition: 0.4s;
 }
 
 .nftCard4:hover .openSeaNFT {
-    background-image: url("/opensea-hover.svg");
+    opacity: 1;
     transition: 0.4s;
 }
 
 .nftCard5:hover .openSeaNFT {
-    background-image: url("/opensea-hover.svg");
+    opacity: 1;
     transition: 0.4s;
 }
 
@@ -416,6 +472,8 @@
     cursor: none;
     z-index: 100;
     font-size: 14px;
+    transition: 0.5s;
+    font-family: "Clash Display";
 }
 
 .roadmapBtns button:first-of-type {
@@ -439,7 +497,7 @@
 
 .roadmapBtns button:nth-of-type(2):hover {
     background-color: #363945;
-    transition: 0.4s;
+    transition: 0.5s;
 }
 
 /* team section */
@@ -563,11 +621,12 @@
     background-image: url("/instagram.svg");
     background-repeat: no-repeat;
     background-size: contain;
+    transition: 0.5s;
 }
 
 .instagram:hover {
     background-image: url("/instagram-hover.svg");
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 .linkedin {
@@ -576,11 +635,12 @@
     background-image: url("/linkedin.svg");
     background-repeat: no-repeat;
     background-size: contain;
+    transition: 0.5s;
 }
 
 .linkedin:hover {
     background-image: url("/linkedin-hover.svg");
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 .twitter {
@@ -589,11 +649,12 @@
     background-image: url("/twitter.svg");
     background-repeat: no-repeat;
     background-size: contain;
+    transition: 0.5s;
 }
 
 .twitter:hover {
     background-image: url("/twitter-hover.svg");
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 .tags {
@@ -711,16 +772,19 @@
     font-size: 14px;
     border: none;
     color: white;
+    font-family: "Clash Display";
 }
 
 .bannerText button:first-of-type {
     background-color: #242630;
     width: 139px;
     height: 42px;
+    transition: 0.5s;
 }
 
 .bannerText button:first-of-type:hover {
     background: #363945;
+    transition: 0.5s;
 }
 
 .bannerText button:nth-of-type(2) {
@@ -764,10 +828,12 @@
     border: none;
     color: white;
     cursor: none;
+    transition: 0.4s;
 }
 
 .selection li:hover {
     background-color: #242630;
+    transition: 0.4s;
 }
 
 #selected {
@@ -848,11 +914,12 @@
 .footerLinks ul li {
     width: fit-content;
     cursor: none;
+    transition: 0.5s;
 }
 
 .footerLinks li:hover {
     color: #39BEF0;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 .footer span {
@@ -878,8 +945,11 @@
     align-items: center;
 }
 
-.app button {
+
+.gradient3 {
+    position: relative;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.0384) 0%, rgba(255, 255, 255, 0.06) 100%);
+    z-index: 1;
     border: 0.7px solid #FFFFFF;
     border-radius: 7px;    
     padding: 0.7rem 1.8rem;
@@ -888,14 +958,24 @@
     color: white;
     margin-bottom: 2rem;
     cursor: none;
-    z-index: 10;
-}
-
-.app button:hover {
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.212) 0%, rgba(255, 255, 255, 0.096) 100%);
-    border: 0.7px solid #FFFFFF;
-    transition: 0.4s;
-}
+  }
+  
+  .gradient3::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(180deg, rgba(255, 255, 255, 0.212) 0%, rgba(255, 255, 255, 0.096) 100%);
+    z-index: -1;
+    transition: opacity 0.5s linear;
+    opacity: 0;
+  }
+  
+  .gradient3:hover::before {
+    opacity: 1;
+  }
 
 .app img {
     cursor: none;
@@ -916,11 +996,12 @@
     background-image: url("/twitter-white.svg");
     background-repeat: no-repeat;
     background-size: contain;
+    transition: 0.5s;
 }
 
 .twitterFooter:hover {
     background-image: url("/twitter-footer-hover.svg");
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 .discordFooter {
@@ -929,11 +1010,12 @@
     background-image: url("/discord.svg");
     background-repeat: no-repeat;
     background-size: contain;
+    transition: 0.5s;
 }
 
 .discordFooter:hover {
     background-image: url("/discord-hover.svg");
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 .openSeaFooter {
@@ -942,11 +1024,12 @@
     background-image: url("/opensea.svg");
     background-repeat: no-repeat;
     background-size: contain;
+    transition: 0.5s;
 }
 
 .openSeaFooter:hover {
     background-image: url("/opensea-hover.svg");
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 

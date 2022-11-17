@@ -14,6 +14,10 @@ body {
     cursor: none !important;
 }
 
+button {
+  font-family: "Clash Display";
+}
+
 a {
   color: inherit;
   text-decoration: none;

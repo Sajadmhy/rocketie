@@ -21,7 +21,7 @@ export default function Roadmap() {
             
             <div className={styles.shape1} onMouseEnter={()=> hoverIn(0)} onMouseLeave={() => hoverOut() }>
                 <h3><span>1</span><span>Browser Launch</span>
-                <svg  width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path fillRule="evenodd" clipRule="evenodd" d="M5.74415 4.53472C5.74415 5.03555 5.33806 5.44164 4.83723 5.44164C4.3364 5.44164 3.93032 5.03555 3.93032 4.53472C3.93032 4.03369 4.3364 3.62781 4.83723 3.62781C5.33806 3.62781 5.74415 4.03369 5.74415 4.53472Z" fill={isHovered[0]? "#39BEF0" : "url(#paint2_linear_210_2)"}/>
 <path fillRule="evenodd" clipRule="evenodd" d="M8.76703 4.53472C8.76703 5.03555 8.36115 5.44164 7.86012 5.44164C7.35929 5.44164 6.9532 5.03555 6.9532 4.53472C6.9532 4.03369 7.35929 3.62781 7.86012 3.62781C8.36115 3.62781 8.76703 4.03369 8.76703 4.53472Z" fill={isHovered[0]? "#39BEF0" : "url(#paint2_linear_210_2)"}/>
 <path fillRule="evenodd" clipRule="evenodd" d="M11.7904 4.53472C11.7904 5.03555 11.3843 5.44164 10.8835 5.44164C10.3825 5.44164 9.9766 5.03555 9.9766 4.53472C9.9766 4.03369 10.3825 3.62781 10.8835 3.62781C11.3843 3.62781 11.7904 4.03369 11.7904 4.53472Z" fill={isHovered[0]? "#39BEF0" : "url(#paint2_linear_210_2)"}/>
