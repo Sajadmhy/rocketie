@@ -176,9 +176,7 @@ export default function Home() {
           <h2>Roadmap</h2>
             <div className={styles.emptyHeight}>
               <div className={styles.roadmapDesktop}><Roadmap /></div>
-              {/* <div className={styles.bigRoadmap}></div> */}
               <div className={styles.roadmapMobile}><RoadmapMobile /></div>
-              {/* <div className={styles.smallRoadmap}></div> */}
             </div>
             <div className={styles.roadmapBtns}>
               <button>Play now</button>

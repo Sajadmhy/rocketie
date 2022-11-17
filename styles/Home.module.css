@@ -304,6 +304,10 @@
     font-size: 14px;
 }
 
+.nftSection button:hover {
+    background-color: rgba(100, 100, 100, 0.3);
+    transition: 0.3s;
+}
 
 
 
@@ -398,6 +402,11 @@
     border-radius: 7px;
     font-weight: 600;
     border: none;
+}
+
+.roadmapBtns button:nth-of-type(2):hover {
+    background-color: #363945;
+    transition: 0.4s;
 }
 
 /* team section */
@@ -824,17 +833,22 @@
 }
 
 .app button {
-    background-color: transparent;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.0384) 0%, rgba(255, 255, 255, 0.06) 100%);
+    border: 0.7px solid #FFFFFF;
+    border-radius: 7px;    
     padding: 0.7rem 1.8rem;
-    border-radius: 7px;
     font-weight: 600;
     font-size: 14px;
-    border: none;
     color: white;
     margin-bottom: 2rem;
-    border: 1px solid white;
     cursor: none;
     z-index: 10;
+}
+
+.app button:hover {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.212) 0%, rgba(255, 255, 255, 0.096) 100%);
+    border: 0.7px solid #FFFFFF;
+    transition: 0.4s;
 }
 
 .app img {
