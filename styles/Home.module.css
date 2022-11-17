@@ -503,7 +503,7 @@
 /* team section */
 
 .team {
-    padding: 4rem 200px;
+    padding: 6rem 200px 7rem 200px;
     color: white;
     position: relative;
     background-image: url("/team-bg.webp");
@@ -844,6 +844,13 @@
 
 .result {
     font-weight: 600;
+    position: relative;
+    bottom: 10px;
+}
+
+.result + p {
+    position: relative;
+    bottom: 10px;
 }
 
 .result span {
@@ -851,7 +858,7 @@
 }
 
 .emptyHeight2 {
-   height: 0;
+   height: 10px;
 }
 
 /* footer section */
