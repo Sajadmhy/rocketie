@@ -302,6 +302,7 @@
     /* z-index: 200; */
 }
 
+
 .nftSection h2 {
     font-size: 35px;
     font-weight: 600;
@@ -1308,6 +1309,10 @@
         zoom: 0.6;
         height: fit-content;
         padding-top: 1rem;
+    }
+    
+    .nftCards > * {
+        margin: 1rem 0;
     }
 
     .nftCard2 {
