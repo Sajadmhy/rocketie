@@ -38,3 +38,26 @@ a {
     top: 0;
   } 
 }
+
+.header-animate {
+  animation-delay: 0.5s;
+}
+
+.paragraph-animate {
+  animation-delay: 1.5s;
+}
+
+.card3-animate {
+  animation-delay: 0.5s;
+  animation-timing-function: ease-in-out;
+}
+
+.card1-animate {
+  animation-delay: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+.card2-animate {
+  animation-delay: 1.5s;
+  animation-timing-function: ease-in-out;
+}

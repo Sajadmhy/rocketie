@@ -90,11 +90,11 @@ export default function Home() {
       <main className={styles.container}>
         <div className={styles.heroBG}>
           <div className={styles.orbit1}><Orbit/></div>
-          <div className='animate__animated animate__fadeInRight'><div className={styles.card2}><Image unoptimized src="/card2.png" width={223} height={337} alt="card" /></div></div>
-          <div className='animate__animated animate__fadeInRight'><div className={styles.card2Mobile}><Image unoptimized src="/card2-mobile.png" width={118.99} height={179.82} alt="card" /></div></div>
-          <div className='animate__animated animate__fadeInRight'><div className={styles.card1Mobile}><Image unoptimized src="/card1-mobile.png" width={156.95} height={256.66} alt="card" /></div></div>
-          <div className='animate__animated animate__fadeInRight'><div className={styles.card3}><Image unoptimized src="/card3.png" alt="card" width={223} height={337} /></div></div>
-          <div className='animate__animated animate__fadeInRight'><div className={styles.card1}><Image unoptimized src="/card1.png" alt="card" width={294.14} height={481} /></div></div>
+          <div className='animate__animated animate__fadeInRight card2-animate'><div className={styles.card2}><Image unoptimized src="/card2.png" width={223} height={337} alt="card" /></div></div>
+          <div className='animate__animated animate__fadeInRight card2-animate'><div className={styles.card2Mobile}><img src="/card2-mobile.png" alt="card" /></div></div>
+          <div className='animate__animated animate__fadeInRight card1-animate'><div className={styles.card1Mobile}><img src="/card1-mobile.png" alt="card" /></div></div>
+          <div className='animate__animated animate__fadeInRight card3-animate'><div className={styles.card3}><Image unoptimized src="/card3.png" alt="card" width={223} height={337} /></div></div>
+          <div className='animate__animated animate__fadeInRight card1-animate'><div className={styles.card1}><Image unoptimized src="/card1.png" alt="card" width={294.14} height={481} /></div></div>
 
           <div className={styles.rocket}><img src="/Rocket.svg" alt="card" /></div>
           <div className={styles.rocketMobile}><img src="/Rocket-mobile.svg" alt="card" /></div>
@@ -119,14 +119,14 @@ export default function Home() {
           </nav>
 
           <div className={styles.hero}>
-            <div className='animate__animated animate__fadeInLeft'><h2 className={styles.header}>Creating fun games to wager crypto with 
+            <div className='animate__animated animate__fadeInUp header-animate'><h2 className={styles.header}>Creating fun games to wager crypto with 
         <span className={styles.yourSkill}>&nbsp;your friends</span></h2></div>
-            <div className='animate__animated animate__fadeInLeft'>
+            <div className='animate__animated animate__fadeInUp paragraph-animate animate__fa'>
               <p className={styles.headerPara}>
             Discover Rocketie studios with their first <span>exclusive NFT</span> release and have a say in a truly decentralised web3 game studio.
               </p>
             </div>
-            <div className='animate__animated animate__fadeInLeft'>
+            <div className=''>
               <div className={styles.heroBtns}>
                 <button>Play now</button>
                 <button>View NFTs</button>
@@ -455,7 +455,7 @@ export default function Home() {
                 <li onClick={() => handleSelect(3)} id={`${selected[3]? styles.selected : styles.unselected }`}> 4</li>
                 <li onClick={() => handleSelect(4)} id={`${selected[4]? styles.selected : styles.unselected }`}> 5</li>
               </div>
-              <div className={styles.result}>{0.64 * (selected.indexOf(true)+1)}ETH <span>/ {(selected.indexOf(true)+1)} Rocketie</span></div>
+              <div className={styles.result}>{0.64 * (selected.indexOf(true)+1)}ETH <span>/ {(selected.indexOf(true)+1)} NFT</span></div>
               <p>Limit of 8 Rocketie per user on launch.</p>
               <div className={styles.emptyHeight2}></div>
               <button>Mint Now</button>            
