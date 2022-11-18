@@ -120,7 +120,7 @@ export default function Home() {
 
           <div className={styles.hero}>
             <div className='animate__animated animate__fadeInUp header-animate'><h2 className={styles.header}>Creating fun games to wager crypto with 
-        <span className={styles.yourSkill}>&nbsp;your friends</span></h2></div>
+        <span className={styles.yourSkill}><br/> &nbsp;your friends</span></h2></div>
             <div className='animate__animated animate__fadeInUp paragraph-animate animate__fa'>
               <p className={styles.headerPara}>
             Discover Rocketie studios with their first <span>exclusive NFT</span> release and have a say in a truly decentralised web3 game studio.
@@ -150,7 +150,8 @@ export default function Home() {
           transition: "0.1s"}} 
             onMouseMove={handleMouseEnter} className={styles.nftCard1} >
               <Image unoptimized src="/nft1.png" width={170} height={170} alt="nft card"/>
-              <h3><div>0.64ETH &nbsp; <span>| &nbsp; $800</span></div> <a className={styles.openSeaNFT}></a></h3>
+              <h3><div>0.64ETH&nbsp;<span>|&nbsp;$800</span></div> <a className={styles.openSeaNFT}></a></h3>
+              <div className={styles.divider}><img src="/divider.svg" alt="" /></div>
               <p>&quot;MOONBEAM 3000&quot;</p>
             </div>
             <div 
@@ -160,7 +161,8 @@ export default function Home() {
             onMouseMove={handleMouseEnter}
             className={styles.nftCard2}>
               <Image unoptimized src="/nft2.png" width={170} height={170} alt="nft card"/>
-              <h3><div>0.64ETH &nbsp; <span>| &nbsp; $800</span></div> <a className={styles.openSeaNFT}></a></h3>
+              <h3><div>0.64ETH&nbsp;<span>|&nbsp;$800</span></div> <a className={styles.openSeaNFT}></a></h3>
+              <div className={styles.divider}><img src="/divider.svg" alt="" /></div>
               <p>&quot;MOONBEAM 3000&quot;</p>
             </div>
             <div 
@@ -170,7 +172,8 @@ export default function Home() {
             onMouseMove={handleMouseEnter}
             className={styles.nftCard3}>
               <Image unoptimized src="/nft3.png" width={170} height={170} alt="nft card"/>
-              <h3><div>0.64ETH &nbsp; <span>| &nbsp; $800</span></div> <a className={styles.openSeaNFT}></a></h3>
+              <h3><div>0.64ETH&nbsp;<span>|&nbsp;$800</span></div> <a className={styles.openSeaNFT}></a></h3>
+              <div className={styles.divider}><img src="/divider.svg" alt="" /></div>
               <p>&quot;MOONBEAM 3000&quot;</p>
             </div>
             <div 
@@ -180,7 +183,8 @@ export default function Home() {
             onMouseMove={handleMouseEnter}
             className={styles.nftCard4}>
               <Image unoptimized src="/nft4.png" width={170} height={170} alt="nft card"/>
-              <h3><div>0.64ETH &nbsp; <span>| &nbsp; $800</span></div> <a className={styles.openSeaNFT}></a></h3>
+              <h3><div>0.64ETH&nbsp;<span>|&nbsp;$800</span></div> <a className={styles.openSeaNFT}></a></h3>
+              <div className={styles.divider}><img src="/divider.svg" alt="" /></div>
               <p>&quot;MOONBEAM 3000&quot;</p>
             </div>
             <div 
@@ -190,7 +194,8 @@ export default function Home() {
             onMouseMove={handleMouseEnter}
             className={styles.nftCard5}>
               <Image unoptimized src="/nft5.png" width={170} height={170} alt="nft card"/>
-              <h3><div>0.64ETH &nbsp; <span>| &nbsp; $800</span></div> <a className={styles.openSeaNFT}></a></h3>
+              <h3><div>0.64ETH&nbsp;<span>|&nbsp;$800</span></div> <a className={styles.openSeaNFT}></a></h3>
+              <div className={styles.divider}><img src="/divider.svg" alt="" /></div>
               <p>&quot;MOONBEAM 3000&quot;</p>
             </div>
             <button>See All</button>
@@ -503,8 +508,8 @@ export default function Home() {
         </div> 
         <span></span>
         <div className={styles.socialLinks}>
-          <a><div className={styles.twitterFooter}></div></a>
           <a><div className={styles.discordFooter}></div></a>
+          <a><div className={styles.twitterFooter}></div></a>
           <a><div className={styles.openSeaFooter}></div></a>
         </div>
         <div className={styles.app}>
