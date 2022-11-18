@@ -47,6 +47,10 @@ a {
   animation-delay: 1.5s;
 }
 
+.hero-btn-animate {
+  animation-delay: 2s;
+}
+
 .card3-animate {
   animation-delay: 0.5s;
   animation-timing-function: ease-in-out;

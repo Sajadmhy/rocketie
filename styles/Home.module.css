@@ -294,7 +294,7 @@
 /* nft section */
 
 .nftSection {
-    padding: 4rem 207px;
+    padding: 6rem 207px;
     background-image: url("/nft-bg.png");
     color: white;
     background-size: cover;
@@ -573,7 +573,7 @@
     background-image: url("/team-bg.png");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 0 0;
 }
 
 .ellipse3 {
@@ -746,15 +746,15 @@
 
 .ellipse4 {
     position: absolute;
-    bottom: -135px;
+    bottom: -250px;
     right: 0;
     width: 100%;
-    height: 220px;
+    height: 320px;
     background-image: url("/Ellipse4.svg");
     background-repeat: no-repeat;
-    background-size: 100vw;
+    background-size: cover;
     background-position: center;
-    z-index: 101;
+    z-index: 400;
 }
 
 

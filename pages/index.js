@@ -99,7 +99,7 @@ export default function Home() {
           <div className={styles.rocket}><img src="/Rocket.svg" alt="card" /></div>
           <div className={styles.rocketMobile}><img src="/Rocket-mobile.svg" alt="card" /></div>
 
-
+          <div className='animate__animated animate__fadeInDown'>
           <nav className={styles.nav}>
             <div className={styles.logo}><Image priority src="/logo.png" height={75} width={75} alt="logo" /></div>
             <ul>
@@ -117,6 +117,7 @@ export default function Home() {
               <button>Play now</button>
             </div>
           </nav>
+          </div>
 
           <div className={styles.hero}>
             <div className='animate__animated animate__fadeInUp header-animate'><h2 className={styles.header}>Creating fun games to wager crypto with 
@@ -126,7 +127,7 @@ export default function Home() {
             Discover Rocketie studios with their first <span>exclusive NFT</span> release and have a say in a truly decentralised web3 game studio.
               </p>
             </div>
-            <div className=''>
+            <div className='animate__animated animate__fadeInUp hero-btn-animate'>
               <div className={styles.heroBtns}>
                 <button>Play now</button>
                 <button>View NFTs</button>
