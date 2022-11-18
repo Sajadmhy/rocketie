@@ -121,7 +121,7 @@ export default function Home() {
 
           <div className={styles.hero}>
             <div className='animate__animated animate__fadeInUp header-animate'><h2 className={styles.header}>Creating fun games to wager crypto with 
-        <span className={styles.yourSkill}><br/> &nbsp;your friends</span></h2></div>
+        <span className={styles.yourSkill}>{ width > 768 ? <br/> : null } &nbsp;your friends</span></h2></div>
             <div className='animate__animated animate__fadeInUp paragraph-animate animate__fa'>
               <p className={styles.headerPara}>
             Discover Rocketie studios with their first <span>exclusive NFT</span> release and have a say in a truly decentralised web3 game studio.
