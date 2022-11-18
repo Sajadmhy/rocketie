@@ -47,6 +47,17 @@ export default function Home() {
   }
 
 
+  // get screen width 
+  const [width, setWidth] = useState(0);
+  const updateWidth = () => {
+    setWidth(window.innerWidth);
+  };
+  useEffect(() => {
+    window.addEventListener("resize", updateWidth);
+    updateWidth();
+    return () => window.removeEventListener("resize", updateWidth);
+  }, []);
+
   return (
     <div>
       <Head>
@@ -70,6 +81,8 @@ export default function Home() {
       targetScale={2.8}
     />
      </div>
+      
+      <div style={{zoom: width > 1440 ? `${width/1440}` : "1"}} className={styles.body}>
 
       <main className={styles.container}>
         <div className={styles.heroBG}>
@@ -499,7 +512,7 @@ export default function Home() {
         <div className={styles.orbit2}><Orbit/></div>
         </div>
       </footer>
-      
+      </div>
     </div>
   )
 }
