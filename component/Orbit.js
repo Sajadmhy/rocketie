@@ -16,6 +16,11 @@ export default function Orbit() {
             <div id={styles.outerOrbit}>
                 <div className={styles.outerOrbitCirlces}></div>
             </div>
+
+            <div id={styles.outerMostOrbit}>
+                <div className={styles.outerMostOrbitCirlces}></div>
+            </div>
+
         </div>
     )
 }

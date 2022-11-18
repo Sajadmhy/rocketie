@@ -294,7 +294,7 @@
 
 .nftSection {
     padding: 4rem 207px;
-    background-image: url("/nft-bg.webp");
+    background-image: url("/nft-bg.png");
     color: white;
     background-size: cover;
     position: relative;
@@ -453,7 +453,7 @@
     padding: 7rem 215px 6rem 215px;
     color: white;
     position: relative;
-    background-image: url("/roadmap-bg.webp");
+    background-image: url("/roadmap-bg.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -553,9 +553,10 @@
     padding: 6rem 200px 7rem 200px;
     color: white;
     position: relative;
-    background-image: url("/team-bg.webp");
+    background-image: url("/team-bg.png");
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
 }
 
 .ellipse3 {
@@ -914,7 +915,7 @@
     font-family: "Clash Display";
     color: white;
     position: relative;
-    background-image: url("/footer-bg.webp");
+    background-image: url("/footer-bg.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;

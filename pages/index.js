@@ -90,11 +90,11 @@ export default function Home() {
       <main className={styles.container}>
         <div className={styles.heroBG}>
           <div className={styles.orbit1}><Orbit/></div>
-          <div className='animate__animated animate__fadeInRight'><div className={styles.card2}><img src="/card2.png" alt="card" /></div></div>
-          <div className='animate__animated animate__fadeInRight'><div className={styles.card2Mobile}><img src="/card2-mobile.png" alt="card" /></div></div>
-          <div className='animate__animated animate__fadeInRight'><div className={styles.card1Mobile}><img src="/card1-mobile.png" alt="card" /></div></div>
-          <div className='animate__animated animate__fadeInRight'><div className={styles.card3}><img src="/card3.png" alt="card" /></div></div>
-          <div className='animate__animated animate__fadeInRight'><div className={styles.card1}><img src="/card1.png" alt="card" /></div></div>
+          <div className='animate__animated animate__fadeInRight'><div className={styles.card2}><Image unoptimized src="/card2.png" width={223} height={337} alt="card" /></div></div>
+          <div className='animate__animated animate__fadeInRight'><div className={styles.card2Mobile}><Image unoptimized src="/card2-mobile.png" width={118.99} height={179.82} alt="card" /></div></div>
+          <div className='animate__animated animate__fadeInRight'><div className={styles.card1Mobile}><Image unoptimized src="/card1-mobile.png" width={156.95} height={256.66} alt="card" /></div></div>
+          <div className='animate__animated animate__fadeInRight'><div className={styles.card3}><Image unoptimized src="/card3.png" alt="card" width={223} height={337} /></div></div>
+          <div className='animate__animated animate__fadeInRight'><div className={styles.card1}><Image unoptimized src="/card1.png" alt="card" width={294.14} height={481} /></div></div>
 
           <div className={styles.rocket}><img src="/Rocket.svg" alt="card" /></div>
           <div className={styles.rocketMobile}><img src="/Rocket-mobile.svg" alt="card" /></div>
@@ -149,7 +149,7 @@ export default function Home() {
             style={{transform: nft1Enter ? `translate(${(nft1Position.x/40)-8}px,${(nft1Position.y/40)-15}px)` : 'translate(0,0)', 
           transition: "0.1s"}} 
             onMouseMove={handleMouseEnter} className={styles.nftCard1} >
-              <Image src="/nft1.png" width={170} height={170} alt="nft card"/>
+              <Image unoptimized src="/nft1.png" width={170} height={170} alt="nft card"/>
               <h3><div>0.64ETH &nbsp; <span>| &nbsp; $800</span></div> <a className={styles.openSeaNFT}></a></h3>
               <p>&quot;MOONBEAM 3000&quot;</p>
             </div>
@@ -159,7 +159,7 @@ export default function Home() {
           transition: "0.1s"}} 
             onMouseMove={handleMouseEnter}
             className={styles.nftCard2}>
-              <Image src="/nft2.png" width={170} height={170} alt="nft card"/>
+              <Image unoptimized src="/nft2.png" width={170} height={170} alt="nft card"/>
               <h3><div>0.64ETH &nbsp; <span>| &nbsp; $800</span></div> <a className={styles.openSeaNFT}></a></h3>
               <p>&quot;MOONBEAM 3000&quot;</p>
             </div>
@@ -169,7 +169,7 @@ export default function Home() {
           transition: "0.1s"}} 
             onMouseMove={handleMouseEnter}
             className={styles.nftCard3}>
-              <Image src="/nft3.png" width={170} height={170} alt="nft card"/>
+              <Image unoptimized src="/nft3.png" width={170} height={170} alt="nft card"/>
               <h3><div>0.64ETH &nbsp; <span>| &nbsp; $800</span></div> <a className={styles.openSeaNFT}></a></h3>
               <p>&quot;MOONBEAM 3000&quot;</p>
             </div>
@@ -179,7 +179,7 @@ export default function Home() {
           transition: "0.1s"}} 
             onMouseMove={handleMouseEnter}
             className={styles.nftCard4}>
-              <Image src="/nft4.png" width={170} height={170} alt="nft card"/>
+              <Image unoptimized src="/nft4.png" width={170} height={170} alt="nft card"/>
               <h3><div>0.64ETH &nbsp; <span>| &nbsp; $800</span></div> <a className={styles.openSeaNFT}></a></h3>
               <p>&quot;MOONBEAM 3000&quot;</p>
             </div>
@@ -189,7 +189,7 @@ export default function Home() {
           transition: "0.1s"}} 
             onMouseMove={handleMouseEnter}
             className={styles.nftCard5}>
-              <Image src="/nft5.png" width={170} height={170} alt="nft card"/>
+              <Image unoptimized src="/nft5.png" width={170} height={170} alt="nft card"/>
               <h3><div>0.64ETH &nbsp; <span>| &nbsp; $800</span></div> <a className={styles.openSeaNFT}></a></h3>
               <p>&quot;MOONBEAM 3000&quot;</p>
             </div>
@@ -439,11 +439,11 @@ export default function Home() {
           <div className={styles.banner}>
             <div className={styles.bannerOverlay1}>
             </div>
-            <div className={styles.bannerPic1}><Image src="/banner-pic-left.png" width={382} height={405} alt="banner picture"/></div>
+            <div className={styles.bannerPic1}><Image unoptimized src="/banner-pic-left.png" width={382} height={405} alt="banner picture"/></div>
           
             <div className={styles.bannerOverlay2}>
             </div>
-            <div className={styles.bannerPic2}><Image src="/banner-pic-right.png" width={382} height={405} alt="banner picture"/></div>
+            <div className={styles.bannerPic2}><Image unoptimized src="/banner-pic-right.png" width={382} height={405} alt="banner picture"/></div>
           
             <div className={styles.bannerText}>
               <button>Connect Wallet</button>
