@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import Orbit from '../component/Orbit';
@@ -47,16 +47,17 @@ export default function Home() {
   }
 
 
-  // get screen width 
-  const [width, setWidth] = useState(0);
+  const [width, setWidth] = useState(false);
   const updateWidth = () => {
     setWidth(window.innerWidth);
   };
+
   useEffect(() => {
     window.addEventListener("resize", updateWidth);
     updateWidth();
     return () => window.removeEventListener("resize", updateWidth);
   }, []);
+
 
   return (
     <div>
@@ -82,7 +83,9 @@ export default function Home() {
     />
      </div>
       
-      <div style={{zoom: width > 1440 ? `${width/1440}` : "1"}} className={styles.body}>
+      { !width ? null : 
+      <div style={{zoom: width > 1440 ? `${width/1440}` : `${1}`}} className={styles.body}>
+
 
       <main className={styles.container}>
         <div className={styles.heroBG}>
@@ -512,7 +515,7 @@ export default function Home() {
         <div className={styles.orbit2}><Orbit/></div>
         </div>
       </footer>
-      </div>
+      </div>}
     </div>
   )
 }
