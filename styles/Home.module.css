@@ -1528,7 +1528,10 @@
     }
 
     .footerLogo {
-        display: none;
+        position: absolute;
+        left: 53px;
+        top: 13px;
+        zoom: 1.1;
     }
 
     .ellipse5 {
