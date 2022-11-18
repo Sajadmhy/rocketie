@@ -135,8 +135,8 @@ export default function Home() {
           </div>
           
           <div className={styles.appUp}>
-            <a href='#'><Image priority src="/app-store.png" width={101} height={30} alt="download from app store"/></a>
-            <a href='#'><Image priority src="/google-play.png" width={116} height={45} alt="download from app store"/></a>
+            <a href='#'><Image unoptimized priority src="/app-store.png" width={101} height={30} alt="download from app store"/></a>
+            <a href='#'><Image unoptimized priority src="/google-play.png" width={116} height={45} alt="download from app store"/></a>
           </div>
           <div className={styles.ellipse}>  
           </div>
@@ -509,8 +509,8 @@ export default function Home() {
         </div>
         <div className={styles.app}>
           <button className={styles.gradient3}>Play now</button>
-          <a><Image src="/app-store.png" width={115} height={35} alt="download from app store"/></a>
-          <a><Image src="/google-play.png" width={132} height={51} alt="download from app store"/></a>
+          <a><Image unoptimized src="/app-store.png" width={115} height={35} alt="download from app store"/></a>
+          <a><Image unoptimized src="/google-play.png" width={132} height={51} alt="download from app store"/></a>
         </div>
         <div className={styles.orbit2}><Orbit/></div>
         </div>
