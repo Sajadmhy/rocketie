@@ -237,12 +237,12 @@ export default function Home() {
                 <div className={styles.cardText}>
                   <p>Co-Founder</p>
                   <h3>Marek Fröhlich
-                <span></span><a className={styles.instagram}>
+                <span></span><a target="_blank" rel="noopener noreferrer" href='https://instagram.com/fmarek' className={styles.instagram}>
                   </a></h3>
                 </div>
                 <div className={styles.tags}>
                   <p>#2341</p>
-                  <Image src="/Rocketie.png" width={59} height={59} alt="rocketie"/>
+                  <Image src="/kwesi-nft.png" width={59} height={59} alt="rocketie"/>
                 </div>
               </div>
 
@@ -255,12 +255,12 @@ export default function Home() {
                 <div className={styles.cardText}>
                   <p>Co-Founder</p>
                   <h3>František Henyš
-                  <span></span><a className={styles.instagram}>
+                  <span></span><a target="_blank" rel="noopener noreferrer" href='https://instagram.com/fandah93' className={styles.instagram}>
                   </a></h3>
                 </div>
                 <div className={styles.tags}>
                   <p>#2341</p>
-                  <Image src="/Rocketie.png" width={59} height={59} alt="rocketie"/>
+                  <Image src="/daniel-nft.png" width={59} height={59} alt="rocketie"/>
                 </div>
               </div>
 
@@ -277,7 +277,7 @@ export default function Home() {
                 </div>
                 <div className={styles.tags}>
                   <p>#2341</p>
-                  <Image src="/Rocketie.png" width={59} height={59} alt="rocketie"/>
+                  <Image src="/joseph-nft.png" width={59} height={59} alt="rocketie"/>
                 </div>
               </div>
 
@@ -294,7 +294,7 @@ export default function Home() {
                 </div>
                 <div className={styles.tags}>
                   <p>#2341</p>
-                  <Image src="/Rocketie.png" width={59} height={59} alt="rocketie"/>
+                  <Image src="/enrico-nft.png" width={59} height={59} alt="rocketie"/>
                 </div>
               </div>
 
@@ -311,7 +311,7 @@ export default function Home() {
                 </div>
                 <div className={styles.tags}>
                   <p>#2341</p>
-                  <Image src="/Rocketie.png" width={59} height={59} alt="rocketie"/>
+                  <Image src="/daniel-nft.png" width={59} height={59} alt="rocketie"/>
                 </div>
               </div>
 
@@ -328,7 +328,7 @@ export default function Home() {
                 </div>
                 <div className={styles.tags}>
                   <p>#2341</p>
-                  <Image src="/Rocketie.png" width={59} height={59} alt="rocketie"/>
+                  <Image src="/kwesi-nft.png" width={59} height={59} alt="rocketie"/>
                 </div>
               </div>
 
@@ -345,7 +345,7 @@ export default function Home() {
                 </div>
                 <div className={styles.tags}>
                   <p>#2341</p>
-                  <Image src="/Rocketie.png" width={59} height={59} alt="rocketie"/>
+                  <Image src="/daniel-nft.png" width={59} height={59} alt="rocketie"/>
                 </div>
               </div>
 
@@ -362,7 +362,7 @@ export default function Home() {
                 </div>
                 <div className={styles.tags}>
                   <p>#2341</p>
-                  <Image src="/Rocketie.png" width={59} height={59} alt="rocketie"/>
+                  <Image src="/joseph-nft.png" width={59} height={59} alt="rocketie"/>
                 </div>
               </div>
 
@@ -370,15 +370,15 @@ export default function Home() {
                 <div className={styles.cardHead}><Image src="/card-header.png" width={300} height={70} alt="team member"/></div>
                 <div className={styles.profilePlaceholder}>
                   <div className={styles.overlay}></div>
-                  <div><Image src="/member3.png" width={54} height={54} alt="team member"/></div>
+                  <div className={styles.members}><Image src="/enrico.png" width={54} height={54} alt="team member"/></div>
                 </div>
                 <div className={styles.cardText}>
                   <p>Head of Marketing</p>
-                  <h3>Enrico Miller <span></span><a className={styles.twitter}></a><a className={styles.linkedin}></a></h3>
-                </div>
+                  <h3>Enrico Miller <span></span><a target="_blank" rel="noopener noreferrer" href='https://twitter.com/enczcrypto' className={styles.twitter}></a><a target="_blank" rel="noopener noreferrer" href='https://www.linkedin.com/in/enricomiller/' className={styles.linkedin}></a></h3>
+                </div> 
                 <div className={styles.tags}>
                   <p>#2341</p>
-                  <Image src="/Rocketie.png" width={59} height={59} alt="rocketie"/>
+                  <Image src="/enrico-nft.png" width={59} height={59} alt="rocketie"/>
                 </div>
               </div>
 
@@ -386,16 +386,16 @@ export default function Home() {
                 <div className={styles.cardHead}><Image src="/card-header.png" width={300} height={70} alt="team member"/></div>
                 <div className={styles.profilePlaceholder}>
                   <div className={styles.overlay}></div>
-                  <div><Image src="/member4.png" width={54} height={54} alt="team member"/></div>
+                  <div className={styles.members}><Image src="/joseph.png" width={54} height={54} alt="team member"/></div>
                 </div>
                 <div className={styles.cardText}>
                   <p>Head of Blockchain Strategy</p>
-                  <h3>Joseph Moulton <span></span><a className={styles.instagram}>
-                  </a><a className={styles.linkedin}></a></h3>
+                  <h3>Joseph Moulton <span></span><a target="_blank" rel="noopener noreferrer" href='https://instagram.com/jwmoulton' className={styles.instagram}>
+                  </a><a target="_blank" rel="noopener noreferrer" href='https://www.linkedin.com/in/joseph-moulton-a860681a1/' className={styles.linkedin}></a></h3>
                 </div>
                 <div className={styles.tags}>
                   <p>#2341</p>
-                  <Image src="/Rocketie.png" width={59} height={59} alt="rocketie"/>
+                  <Image src="/joseph-nft.png" width={59} height={59} alt="rocketie"/>
                 </div>
               </div>
               <div className={styles.teamCard}>
@@ -407,11 +407,11 @@ export default function Home() {
 
                 <div className={styles.cardText}>
                   <p>Marketing Strategist</p>
-                  <h3>Daniel Zad <span></span><a className={styles.twitter}></a><a className={styles.linkedin}></a></h3>
+                  <h3>Daniel Zad <span></span><a target="_blank" rel="noopener noreferrer" href='https://twitter.com/d_zadransky' className={styles.twitter}></a></h3>
                 </div>
                 <div className={styles.tags}>
                   <p>#2341</p>
-                  <Image src="/Rocketie.png" width={59} height={59} alt="rocketie"/>
+                  <Image src="/daniel-nft.png" width={59} height={59} alt="rocketie"/>
                 </div>
               </div>
 
@@ -419,15 +419,15 @@ export default function Home() {
                 <div className={styles.cardHead}><Image src="/card-header.png" width={300} height={70} alt="team member"/></div>
                 <div className={styles.profilePlaceholder}>
                   <div className={styles.overlay}></div>
-                  <div><Image src="/member6.png" width={54} height={54} alt="team member"/></div>
+                  <div className={styles.members}><Image src="/kwesi.png" width={54} height={54} alt="team member"/></div>
                 </div>
                 <div className={styles.cardText}>
                   <p>Blockchain Strategist</p>
-                  <h3>Kwesi Ashante <span></span><a className={styles.twitter}></a><a className={styles.linkedin}></a></h3>
+                  <h3>Kwesi Ashante <span></span><a target="_blank" rel="noopener noreferrer" href='https://instagram.com/kwesi.eth' className={styles.instagram}></a><a target="_blank" rel="noopener noreferrer" href='https://www.linkedin.com/in/kwesi-adarkwa-34606ab6/' className={styles.linkedin}></a></h3>
                 </div>
                 <div className={styles.tags}>
                   <p>#2341</p>
-                  <Image src="/Rocketie.png" width={59} height={59} alt="rocketie"/>
+                  <Image src="/kwesi-nft.png" width={59} height={59} alt="rocketie"/>
                 </div>
               </div>
               </div>

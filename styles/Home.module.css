@@ -690,6 +690,10 @@
     flex-grow: 1;
 }
 
+.members img {
+    border-radius: 7px;
+}
+
 .instagram {
     width: 16px;
     height: 13px;
