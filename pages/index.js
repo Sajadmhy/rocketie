@@ -10,6 +10,7 @@ import RoadmapMobile from '../component/RoadmapMobile';
 import CustomCursor from 'custom-cursor-react';
 import 'custom-cursor-react/dist/index.css';
 import "animate.css";
+import Link from 'next/link';
 
 export default function Home() {
   // initialize aos
@@ -103,11 +104,11 @@ export default function Home() {
           <nav className={styles.nav}>
             <div className={styles.logo}><Image priority src="/logo.png" height={75} width={75} alt="logo" /></div>
             <ul>
-              <li>Home</li>
-              <li>Info</li>
-              <li>Roadmap</li>
-              <li>Team</li>
-              <li>Mint</li>
+              <Link href='/'><li>Home</li></Link>
+              <a href='#info'><li>Info</li></a>
+              <a href='#roadmap'><li>Roadmap</li></a>
+              <a href='#team'><li>Team</li></a>
+              <a href='#mint'><li>Mint</li></a>
             </ul>
             <div className={styles.navEnd}>
             <a><div className={styles.openSeaFooter}></div></a>
@@ -143,7 +144,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className={styles.nftSection}>
+        <div id='info' className={styles.nftSection}>
           <h2>Play and earn collectible <div>items and NFTs</div></h2>
           <div data-aos="fade-right" className={styles.nftCards}>
             <div onMouseEnter={()=> setNft1(true)} onMouseLeave={() => setNft1(false)}
@@ -203,7 +204,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className={styles.roadmap}>
+        <div id='roadmap' className={styles.roadmap}>
           <div className={styles.ellipse2}>  
           </div>
           <div data-aos="fade-left">
@@ -220,7 +221,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className={styles.team}>
+        <div id='team' className={styles.team}>
             <div className={styles.ellipse3}>
             </div>
             <div data-aos="fade-right">
@@ -232,7 +233,7 @@ export default function Home() {
                 <div className={styles.cardHead}><Image src="/card-header.png" width={300} height={70} alt="team member"/></div>
                 <div className={styles.profilePlaceholder}>
                   <div className={styles.overlay}></div>
-                  <div><Image src="/member1.png" width={54} height={54} alt="team member"/></div>
+                  <div className={styles.members}><Image src="/fmarek.png" width={54} height={54} alt="team member"/></div>
                 </div>
                 <div className={styles.cardText}>
                   <p>Co-Founder</p>
@@ -250,7 +251,7 @@ export default function Home() {
                 <div className={styles.cardHead}><Image src="/card-header.png" width={300} height={70} alt="team member"/></div>
                 <div className={styles.profilePlaceholder}>
                   <div className={styles.overlay}></div>
-                  <div><Image src="/member2.png" width={54} height={54} alt="team member"/></div>
+                  <div  className={styles.members}><Image src="/fanda.png" width={54} height={54} alt="team member"/></div>
                 </div>
                 <div className={styles.cardText}>
                   <p>Co-Founder</p>
@@ -268,7 +269,7 @@ export default function Home() {
                 <div className={styles.cardHead}><Image src="/card-header.png" width={300} height={70} alt="team member"/></div>
                 <div className={styles.profilePlaceholder}>
                   <div className={styles.overlay}></div>
-                  <div><Image src="/member3.png" width={54} height={54} alt="team member"/></div>
+                  <div  className={styles.members}><Image src="/member3.png" width={54} height={54} alt="team member"/></div>
                 </div>
                 <div className={styles.cardText}>
                   <p>Investor & Founder of x</p>
@@ -285,7 +286,7 @@ export default function Home() {
                 <div className={styles.cardHead}><Image src="/card-header.png" width={300} height={70} alt="team member"/></div>
                 <div className={styles.profilePlaceholder}>
                   <div className={styles.overlay}></div>
-                  <div><Image src="/member3.png" width={54} height={54} alt="team member"/></div>
+                  <div  className={styles.members}><Image src="/member3.png" width={54} height={54} alt="team member"/></div>
                 </div>
                 <div className={styles.cardText}>
                   <p>Investor & Founder of x</p>
@@ -302,7 +303,7 @@ export default function Home() {
                 <div className={styles.cardHead}><Image src="/card-header.png" width={300} height={70} alt="team member"/></div>
                 <div className={styles.profilePlaceholder}>
                   <div className={styles.overlay}></div>
-                  <div><Image src="/member3.png" width={54} height={54} alt="team member"/></div>
+                  <div  className={styles.members}><Image src="/member3.png" width={54} height={54} alt="team member"/></div>
                 </div>
                 <div className={styles.cardText}>
                   <p>Advisor</p>
@@ -319,7 +320,7 @@ export default function Home() {
                 <div className={styles.cardHead}><Image src="/card-header.png" width={300} height={70} alt="team member"/></div>
                 <div className={styles.profilePlaceholder}>
                   <div className={styles.overlay}></div>
-                  <div><Image src="/member3.png" width={54} height={54} alt="team member"/></div>
+                  <div className={styles.members}><Image src="/member3.png" width={54} height={54} alt="team member"/></div>
                 </div>
                 <div className={styles.cardText}>
                   <p>Main Artist</p>
@@ -336,7 +337,7 @@ export default function Home() {
                 <div className={styles.cardHead}><Image src="/card-header.png" width={300} height={70} alt="team member"/></div>
                 <div className={styles.profilePlaceholder}>
                   <div className={styles.overlay}></div>
-                  <div><Image src="/member3.png" width={54} height={54} alt="team member"/></div>
+                  <div className={styles.members}><Image src="/member3.png" width={54} height={54} alt="team member"/></div>
                 </div>
                 <div className={styles.cardText}>
                   <p>Main Developer</p>
@@ -353,7 +354,7 @@ export default function Home() {
                 <div className={styles.cardHead}><Image src="/card-header.png" width={300} height={70} alt="team member"/></div>
                 <div className={styles.profilePlaceholder}>
                   <div className={styles.overlay}></div>
-                  <div><Image src="/member3.png" width={54} height={54} alt="team member"/></div>
+                  <div className={styles.members}><Image src="/member3.png" width={54} height={54} alt="team member"/></div>
                 </div>
                 <div className={styles.cardText}>
                   <p>Smart Contract Developer</p>
@@ -363,6 +364,23 @@ export default function Home() {
                 <div className={styles.tags}>
                   <p>#2341</p>
                   <Image src="/joseph-nft.png" width={59} height={59} alt="rocketie"/>
+                </div>
+              </div>
+
+              <div className={styles.teamCard}>
+                <div className={styles.cardHead}><Image src="/card-header.png" width={300} height={70} alt="team member"/></div>
+                <div className={styles.profilePlaceholder}>
+                  <div className={styles.overlay}></div>
+                  <div className={styles.members}><Image src="/member3.png" width={54} height={54} alt="team member"/></div>
+                </div>
+                <div className={styles.cardText}>
+                  <p>UI Designer</p>
+                  <h3>Alenka
+                  <span></span></h3>
+                </div>
+                <div className={styles.tags}>
+                  <p>#2341</p>
+                  <Image src="/daniel-nft.png" width={59} height={59} alt="rocketie"/>
                 </div>
               </div>
 
@@ -402,7 +420,7 @@ export default function Home() {
                 <div className={styles.cardHead}><Image src="/card-header.png" width={300} height={70} alt="team member"/></div>
                 <div className={styles.profilePlaceholder}>
                   <div className={styles.overlay}></div>
-                  <div><Image src="/member5.png" width={54} height={54} alt="team member"/></div>
+                  <div className={styles.members}><Image src="/member5.png" width={54} height={54} alt="team member"/></div>
                 </div>
 
                 <div className={styles.cardText}>
@@ -437,7 +455,7 @@ export default function Home() {
             </div>
         </div>  
 
-        <div className={styles.mint}>
+        <div id='mint' className={styles.mint}>
           <div data-aos='fade-left'>
 
           <p id={styles.mintP}>300/6000 REMAINING</p>
@@ -462,7 +480,7 @@ export default function Home() {
                 <li onClick={() => handleSelect(4)} id={`${selected[4]? styles.selected : styles.unselected }`}> 5</li>
               </div>
               <div className={styles.result}>{0.64 * (selected.indexOf(true)+1)}ETH <span>/ {(selected.indexOf(true)+1)} NFT</span></div>
-              <p>Limit of 8 Rocketie per user on launch.</p>
+              <p>Limit of 5 Rocketie per user on launch.</p>
               <div className={styles.emptyHeight2}></div>
               <button>Mint Now</button>            
             </div>
