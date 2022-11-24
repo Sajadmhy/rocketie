@@ -92,8 +92,8 @@ export default function Home() {
         <div className={styles.heroBG}>
           <div className={styles.orbit1}><Orbit/></div>
           <div className='animate__animated animate__fadeInRight card2-animate'><div className={styles.card2}><Image unoptimized src="/card2.png" width={223} height={337} alt="card" /></div></div>
-          <div className='animate__animated animate__fadeInRight card2-animate'><div className={styles.card2Mobile}><img src="/card2-mobile.png" alt="card" /></div></div>
-          <div className='animate__animated animate__fadeInRight card1-animate'><div className={styles.card1Mobile}><img src="/card1-mobile.png" alt="card" /></div></div>
+          <div className='animate__animated animate__fadeInRight card2-animate'><div className={styles.card2Mobile}><Image unoptimized src="/card2-mobile.png" width={200} height={270} alt="card" /></div></div>
+          <div className='animate__animated animate__fadeInRight card1-animate'><div className={styles.card1Mobile}><Image unoptimized src="/card1-mobile.png" width={223} height={337} alt="card" /></div></div>
           <div className='animate__animated animate__fadeInRight card3-animate'><div className={styles.card3}><Image unoptimized src="/card3.png" alt="card" width={223} height={337} /></div></div>
           <div className='animate__animated animate__fadeInRight card1-animate'><div className={styles.card1}><Image unoptimized src="/card1.png" alt="card" width={294.14} height={481} /></div></div>
 
@@ -243,7 +243,7 @@ export default function Home() {
                 </div>
                 <div className={styles.tags}>
                   <p>#2341</p>
-                  <Image src="/kwesi-nft.png" width={59} height={59} alt="rocketie"/>
+                  <Image src="/marek-nft.png" width={59} height={59} alt="rocketie"/>
                 </div>
               </div>
 
@@ -261,7 +261,7 @@ export default function Home() {
                 </div>
                 <div className={styles.tags}>
                   <p>#2341</p>
-                  <Image src="/daniel-nft.png" width={59} height={59} alt="rocketie"/>
+                  <Image src="/fanda-nft.png" width={59} height={59} alt="rocketie"/>
                 </div>
               </div>
 
@@ -278,7 +278,7 @@ export default function Home() {
                 </div>
                 <div className={styles.tags}>
                   <p>#2341</p>
-                  <Image src="/joseph-nft.png" width={59} height={59} alt="rocketie"/>
+                  <Image src="/michal-nft.png" width={59} height={59} alt="rocketie"/>
                 </div>
               </div>
 
@@ -295,7 +295,7 @@ export default function Home() {
                 </div>
                 <div className={styles.tags}>
                   <p>#2341</p>
-                  <Image src="/enrico-nft.png" width={59} height={59} alt="rocketie"/>
+                  <Image src="/radek-nft.png" width={59} height={59} alt="rocketie"/>
                 </div>
               </div>
 
@@ -312,7 +312,7 @@ export default function Home() {
                 </div>
                 <div className={styles.tags}>
                   <p>#2341</p>
-                  <Image src="/daniel-nft.png" width={59} height={59} alt="rocketie"/>
+                  <Image src="/alex-nft.png" width={59} height={59} alt="rocketie"/>
                 </div>
               </div>
 
@@ -329,7 +329,7 @@ export default function Home() {
                 </div>
                 <div className={styles.tags}>
                   <p>#2341</p>
-                  <Image src="/kwesi-nft.png" width={59} height={59} alt="rocketie"/>
+                  <Image src="/kay-nft.png" width={59} height={59} alt="rocketie"/>
                 </div>
               </div>
 
@@ -346,7 +346,7 @@ export default function Home() {
                 </div>
                 <div className={styles.tags}>
                   <p>#2341</p>
-                  <Image src="/daniel-nft.png" width={59} height={59} alt="rocketie"/>
+                  <Image src="/ondra-nft.png" width={59} height={59} alt="rocketie"/>
                 </div>
               </div>
 
@@ -363,7 +363,7 @@ export default function Home() {
                 </div>
                 <div className={styles.tags}>
                   <p>#2341</p>
-                  <Image src="/joseph-nft.png" width={59} height={59} alt="rocketie"/>
+                  <Image src="/martin-nft.png" width={59} height={59} alt="rocketie"/>
                 </div>
               </div>
 
@@ -380,7 +380,7 @@ export default function Home() {
                 </div>
                 <div className={styles.tags}>
                   <p>#2341</p>
-                  <Image src="/daniel-nft.png" width={59} height={59} alt="rocketie"/>
+                  <Image src="/alenka-nft.png" width={59} height={59} alt="rocketie"/>
                 </div>
               </div>
 

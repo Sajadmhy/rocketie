@@ -1174,18 +1174,20 @@
         display: none;
     }
     
+
+
     .card2Mobile{
         display: block;
         position: absolute;
-        top: 460px;
-        right: 50%;
+        top: 430px;
+        right: 40%;
         rotate: -13.42deg;
     }
 
     .card1Mobile {
         display: block;
         position: absolute;
-        top: 330px;
+        top: 350px;
         left:43%;
         rotate: -13.42deg;
     }
